@@ -27,10 +27,10 @@
   >
     {% if recommendations.performed and recommendations.products_count > 0 %}
       <h2 class="related-products__heading {{ section.settings.collection_text_alignment }} inline-richtext {{ section.settings.heading_size }}">
-        {{ section.settings.heading | replace: '[', '<span class="lumin-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="lumin-text__fancy2">' | replace: '))', '</span>' }}
+        {{ section.settings.heading | replace: '[', '<span class="clarity-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="clarity-text__fancy2">' | replace: '))', '</span>' }}
       </h2>
       <ul
-        class="grid lumin-grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
+        class="grid clarity-grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
         role="list"
       >
         {% for recommendation in recommendations.products %}

@@ -67,7 +67,7 @@
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin"
            style="justify-content: {{ section.settings.heading_center }};text-align: {{ section.settings.heading_center }};">
         <h2 class="title inline-richtext {{ section.settings.collection_text_alignment }} {{ section.settings.heading_size }}">
-          {{ section.settings.title | replace: '[', '<span class="lumin-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="lumin-text__fancy2">' | replace: '))', '</span>' }}
+          {{ section.settings.title | replace: '[', '<span class="clarity-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="clarity-text__fancy2">' | replace: '))', '</span>' }}
         </h2>
         
       </div>
@@ -162,10 +162,10 @@
                         <svg class="svg text-secondary " version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="m3.488 13.184 6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"/></svg>              
                       </span>
                 {%- if block.settings.title != blank -%}
-                  <h3 class="inline-richtext">{{ block.settings.title | replace: '[', '<span class="lumin-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="lumin-text__fancy2">' | replace: '))', '</span>' }}</h3>
+                  <h3 class="inline-richtext">{{ block.settings.title | replace: '[', '<span class="clarity-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="clarity-text__fancy2">' | replace: '))', '</span>' }}</h3>
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
-                  <div class="rte">{{ block.settings.text | replace: '[', '<span class="lumin-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="lumin-text__fancy2">' | replace: '))', '</span>' }}</div>
+                  <div class="rte">{{ block.settings.text | replace: '[', '<span class="clarity-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="clarity-text__fancy2">' | replace: '))', '</span>' }}</div>
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
                   <a

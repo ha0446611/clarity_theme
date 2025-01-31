@@ -79,14 +79,14 @@ https://flickity.metafizzy.co
   overflow-x: hidden;
 }
 
-#LM--{{ section_id }} .lumin-pck__sizer {
+#LM--{{ section_id }} .clarity-pck__sizer {
   padding-top: {{ section.settings.inner_padding }}px;
   padding-bottom: {{ section.settings.inner_padding }}px;
   width: {{ section.settings.base_width }}%;
   max-width: {{ max_width }};
 }
 
-#LM--{{ section_id }} .lumin-pck__flex--main {
+#LM--{{ section_id }} .clarity-pck__flex--main {
   position: relative;
   align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
@@ -94,17 +94,17 @@ https://flickity.metafizzy.co
   grid-auto-columns: minmax(0, auto);
 }
 
-#LM--{{ section_id }} .lumin-pck__content {
+#LM--{{ section_id }} .clarity-pck__content {
   flex: 1 0 40%;
   padding: 20px;
 }
 
-#LM--{{ section_id }} .lumin-pck__inner-content {
+#LM--{{ section_id }} .clarity-pck__inner-content {
   width: min(400px, 80%);
   margin: auto;
 }
 
-#LM--{{ section_id }} .lumin-pck__small-heading {
+#LM--{{ section_id }} .clarity-pck__small-heading {
   margin: 0;
   text-align: left;
   color: {{ section.settings.text_color }};
@@ -118,7 +118,7 @@ https://flickity.metafizzy.co
 }
 
 {% comment %} Block styling {% endcomment %}
-#LM--{{ section_id }} .lumin-pck__block .lumin-pck__small-heading {
+#LM--{{ section_id }} .clarity-pck__block .clarity-pck__small-heading {
   font-size: calc(var(--LM-g-small-heading-size, var(--LM-small-heading-size, 24px)) * {{ section.settings.text_size | times: 0.01 }});
   {%- if section.settings.override_theme_font != blank -%}
     font-family: var(--heading-font);
@@ -127,8 +127,8 @@ https://flickity.metafizzy.co
   {%- endif -%}
 }
 
-#LM--{{ section_id }} .lumin-pck__rte p,
-#LM--{{ section_id }} .lumin-pck__rte ul {
+#LM--{{ section_id }} .clarity-pck__rte p,
+#LM--{{ section_id }} .clarity-pck__rte ul {
   line-height: var(--LM-g-body-line-height, var(--LM-body-line-height, calc(3px + 2.5ex + 3px)));
   color: {{ section.settings.text_color }};
   font-size: calc(var(--LM-g-body-size, var(--LM-body-size, 18px)) * {{ section.settings.text_size | times: 0.01 }});
@@ -139,26 +139,26 @@ https://flickity.metafizzy.co
   {%- endif -%}
 }
 
-#LM--{{ section_id }} .lumin-pck__block {
+#LM--{{ section_id }} .clarity-pck__block {
   color: {{ section.settings.text_color }};
 }
 
-#LM--{{ section_id }} .lumin-pck__block + .lumin-pck__block {
+#LM--{{ section_id }} .clarity-pck__block + .clarity-pck__block {
   margin-top: 15px;
 }
 {% comment %} End block styling {% endcomment %}
 
 /* Slider */
-#LM--{{ section_id }} .lumin-pck__videos {
+#LM--{{ section_id }} .clarity-pck__videos {
   flex: 1 0 60%;
 }
 
-#LM--{{ section_id }} .lumin-pck__video-slider {
+#LM--{{ section_id }} .clarity-pck__video-slider {
   margin: auto;
   overflow: visible;
 }
 
-#LM--{{ section_id }} .lumin-pck__item {
+#LM--{{ section_id }} .clarity-pck__item {
   --slide-width: {{ section.settings.slide_width }}px;
   --final-slide-width: calc(var(--slide-width) - {{ section.settings.gap }}px);
   --slide-height: calc(var(--final-slide-width) * calc({{ image_crop_height }}/{{image_crop_width }}) - 30px);
@@ -169,30 +169,30 @@ https://flickity.metafizzy.co
   display: inline-block;
 }
 
-#LM--{{ section_id }} .lumin-pck__item > a {
+#LM--{{ section_id }} .clarity-pck__item > a {
   text-decoration: none;
 }
 
-#LM--{{ section_id }} .lumin-pck__stretch-height .lumin-pck__item {
+#LM--{{ section_id }} .clarity-pck__stretch-height .clarity-pck__item {
   height: 100%;
 }
 
-#LM--{{ section_id }} .is-selected .lumin-pck__video-wrapper {
+#LM--{{ section_id }} .is-selected .clarity-pck__video-wrapper {
   padding-top: 0;
 }
 
-#LM--{{ section_id }} .lumin-pck__video-inner {
+#LM--{{ section_id }} .clarity-pck__video-inner {
     width: 100%;
 }
 
-#LM--{{ section_id }} .is-selected .lumin-pck__hosted-video {
+#LM--{{ section_id }} .is-selected .clarity-pck__hosted-video {
   width: 100%;
   min-height: var(--selected-slide-height);
   display: block;
   object-fit: cover;
 }
 
-#LM--{{ section_id }} .lumin-pck__video {
+#LM--{{ section_id }} .clarity-pck__video {
   height: 100%;
   display: flex;
   text-align: center;
@@ -201,14 +201,14 @@ https://flickity.metafizzy.co
   overflow: hidden;
 }
 
-#LM--{{ section_id }} .lumin-pck__video-wrapper {
+#LM--{{ section_id }} .clarity-pck__video-wrapper {
   width: 100%;
   padding-top: calc(var(--selected-slide-height) - var(--slide-height));
   transition: all 0.5s ease;
   position: relative;
 }
 
-#LM--{{ section_id }} .lumin-pck__hosted-video {
+#LM--{{ section_id }} .clarity-pck__hosted-video {
   width: 100%;
   min-height: var(--slide-height);
   display: block;
@@ -217,7 +217,7 @@ https://flickity.metafizzy.co
   transition: all 0.5s ease;
 }
 
-#LM--{{ section_id }} .lumin-pck__video-content {
+#LM--{{ section_id }} .clarity-pck__video-content {
   width: 100%;
   margin: 10px auto;
   display: flex;
@@ -231,11 +231,11 @@ https://flickity.metafizzy.co
   transition: all 0.2s linear;
 }
 
-#LM--{{ section_id }} .lumin-pck__video-content:hover {
+#LM--{{ section_id }} .clarity-pck__video-content:hover {
   border-width: 2px;
 }
 
-#LM--{{ section_id }} .lumin-pck__sound-button {
+#LM--{{ section_id }} .clarity-pck__sound-button {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
@@ -252,11 +252,11 @@ https://flickity.metafizzy.co
   background-repeat: no-repeat;
 }
 
-#LM--{{ section_id }} .lumin-pck__sound-button--on {
+#LM--{{ section_id }} .clarity-pck__sound-button--on {
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd'%3E%3Cpath d='M15 23l-9.309-6h-5.691v-10h5.691l9.309-6v22zm-9-15.009v8.018l8 5.157v-18.332l-8 5.157zm14.228-4.219c2.327 1.989 3.772 4.942 3.772 8.229 0 3.288-1.445 6.241-3.77 8.229l-.708-.708c2.136-1.791 3.478-4.501 3.478-7.522s-1.342-5.731-3.478-7.522l.706-.706zm-2.929 2.929c1.521 1.257 2.476 3.167 2.476 5.299 0 2.132-.955 4.042-2.476 5.299l-.706-.706c1.331-1.063 2.182-2.729 2.182-4.591 0-1.863-.851-3.529-2.184-4.593l.708-.708zm-12.299 1.299h-4v8h4v-8z'/%3E%3C/svg%3E");
 }
 
-#LM--{{ section_id }} .lumin-pck__text-area {
+#LM--{{ section_id }} .clarity-pck__text-area {
   flex: 1;
   text-align: {{ section.settings.text_alignment }};
   display: flex;
@@ -265,7 +265,7 @@ https://flickity.metafizzy.co
   justify-content: {{ section.settings.text_alignment }};
 }
 
-#LM--{{ section_id }} .lumin-pck__videos-nav {
+#LM--{{ section_id }} .clarity-pck__videos-nav {
   width: fit-content;
   margin: 0 auto;
   display: flex;
@@ -273,36 +273,36 @@ https://flickity.metafizzy.co
   margin-top: 20px;
 }
 
-#LM--{{ section_id }} .lumin-pck__nav-button {
+#LM--{{ section_id }} .clarity-pck__nav-button {
   cursor: pointer;
 }
 
-#LM--{{ section_id }} .lumin-pck__rte p,
-#LM--{{ section_id }} .lumin-pck__rte ul {
+#LM--{{ section_id }} .clarity-pck__rte p,
+#LM--{{ section_id }} .clarity-pck__rte ul {
   color: {{ section.settings.text_color }};
 }
 
-#LM--{{ section_id }} .lumin-pck__small-heading {
+#LM--{{ section_id }} .clarity-pck__small-heading {
   color: {{ section.settings.text_color }};
 }
 
-#LM--{{ section_id }} .lumin-pck__image {
+#LM--{{ section_id }} .clarity-pck__image {
   width: 25%;
   overflow: hidden;
   border-radius: {{ section.settings.border_radius }}px;
 }
 
-#LM--{{ section_id }} .lumin-pck__videos-wrapper:after {
+#LM--{{ section_id }} .clarity-pck__videos-wrapper:after {
   content: 'flickity';
   display: none;
 }
 
-#LM--{{ section_id }} .lumin-pck__videos-wrapper:not(.flickity-enabled) {
+#LM--{{ section_id }} .clarity-pck__videos-wrapper:not(.flickity-enabled) {
   display: flex;
   gap: 10px;
 }
 
-#LM--{{ section_id }} .lumin-pck__videos-wrapper:not(.flickity-enabled) .lumin-pck__item:nth-child(n+{{ section.settings.per_row | plus: 1 }}){
+#LM--{{ section_id }} .clarity-pck__videos-wrapper:not(.flickity-enabled) .clarity-pck__item:nth-child(n+{{ section.settings.per_row | plus: 1 }}){
   display: none;
 }
 
@@ -332,13 +332,13 @@ https://flickity.metafizzy.co
     --wrap-around: true;
   }
 
-  #LM--{{ section_id }} .lumin-pck__sizer {
+  #LM--{{ section_id }} .clarity-pck__sizer {
     margin: 0 auto;
     padding-top: {{ section.settings.inner_padding | divided_by: 2 }}px;
     padding-bottom: {{ section.settings.inner_padding | divided_by: 2 }}px;
   }
 
-  #LM--{{ section_id }} .lumin-pck__item {
+  #LM--{{ section_id }} .clarity-pck__item {
     --slide-width: 300px;
   }
 
@@ -361,41 +361,41 @@ https://flickity.metafizzy.co
 -%}
 
 {%- comment -%} HTML {%- endcomment -%}
-<section id="LM--{{ section_id }}" class="LM--{{ section_id }} lumin-pck__videos-slider lumin-pck__section">
+<section id="LM--{{ section_id }}" class="LM--{{ section_id }} clarity-pck__videos-slider clarity-pck__section">
   {%- if section.settings.anchor_id != blank -%}
-    <div id="{{ section.settings.anchor_id | remove: '#' | handleize }}" class="lumin-pck__anchor-id" style="height: 0; overflow: hidden;"></div>
+    <div id="{{ section.settings.anchor_id | remove: '#' | handleize }}" class="clarity-pck__anchor-id" style="height: 0; overflow: hidden;"></div>
   {%- endif -%}
-  <div class="lumin-pck__sizer">
-    <div class="lumin-pck__flex lumin-pck__flex--main">
-      <div class="lumin-pck__videos">
-        <div id="slider-{{ section_id }}" class="lumin-pck__videos-wrapper lumin-pck__video-slider">
+  <div class="clarity-pck__sizer">
+    <div class="clarity-pck__flex clarity-pck__flex--main">
+      <div class="clarity-pck__videos">
+        <div id="slider-{{ section_id }}" class="clarity-pck__videos-wrapper clarity-pck__video-slider">
           {%- for block in videos -%}
-            <div class="lumin-pck__item lumin-pck__item lumin-pck__video-{{ forloop.index }} lumin-pck__block-{{ block.id }}" {{ block.shopify_attributes }}>
-              <div class="lumin-pck__video">
-                <div class="lumin-pck__video-inner">
+            <div class="clarity-pck__item clarity-pck__item clarity-pck__video-{{ forloop.index }} clarity-pck__block-{{ block.id }}" {{ block.shopify_attributes }}>
+              <div class="clarity-pck__video">
+                <div class="clarity-pck__video-inner">
                   {%- if block.settings.html5_video != blank -%}
-                    <div class="lumin-pck__video-wrapper">
+                    <div class="clarity-pck__video-wrapper">
                       {%- assign video = block.settings.html5_video -%}
-                      <video class="lumin-pck__hosted-video" width="{{ video.aspect_ratio | times: 100 }}" height="100" playsinline loop muted loading="lazy" poster="{{ video.preview_image | image_url: width: 2800 }}">
+                      <video class="clarity-pck__hosted-video" width="{{ video.aspect_ratio | times: 100 }}" height="100" playsinline loop muted loading="lazy" poster="{{ video.preview_image | image_url: width: 2800 }}">
                         {%- for source in video.sources -%}
                           {%- if source.format == 'mp4' or source.format == 'mov' -%}<source src="{{ source.url }}">{%- endif -%}
                         {%- endfor -%}
                       </video>
-                      <div class="lumin-pck__sound-button"></div>
+                      <div class="clarity-pck__sound-button"></div>
                     </div>
                   {%- else -%}
                   {% comment %} Placeholder {% endcomment %}
-                  <div class="lumin-pck__video-wrapper">
-                    {% render 'lumin-play-icon' %}
-                    <video style="background:#f2f2f2;" class="lumin-pck__hosted-video" width="{{ video.aspect_ratio | times: 100 }}" height="100" playsinline loop muted loading="lazy">
-                    <div class="lumin-pck__sound-button"></div>
+                  <div class="clarity-pck__video-wrapper">
+                    {% render 'clarity-play-icon' %}
+                    <video style="background:#f2f2f2;" class="clarity-pck__hosted-video" width="{{ video.aspect_ratio | times: 100 }}" height="100" playsinline loop muted loading="lazy">
+                    <div class="clarity-pck__sound-button"></div>
                     </video>
                   </div>
                   {%- endif -%}
                   {%- unless block.settings.product == blank and block.settings.collection == blank -%}
                     {%- assign collection = collections[block.settings.collection] -%}
-                    <div class="lumin-pck__video-content">
-                      <a href="{{ block.settings.product.url | default: collection.url }}" class="lumin-pck__absolute-link"></a>
+                    <div class="clarity-pck__video-content">
+                      <a href="{{ block.settings.product.url | default: collection.url }}" class="clarity-pck__absolute-link"></a>
                       {%- if block.settings.product.featured_image != blank or block.settings.collection.featured_image != blank -%}
                         {%- assign image = block.settings.product.featured_image | default: collection.featured_image -%}
                         {%- comment -%} Crop based on initial image width and height{%- endcomment -%}
@@ -404,9 +404,9 @@ https://flickity.metafizzy.co
                           {%- assign image_crop_height = image.height -%}
                         {%- endif -%}
                         {%- if image != blank -%}
-                          <div class="lumin-pck__image lumin-pck__image--{{ section.settings.image_crop }}">
-                            <div class="lumin-pck__image__wrapper">
-                              <svg class="lumin-pck__svg-sizer" viewBox="0 0 {{ image_crop_width | default: 1000 }} {{ image_crop_height | default: 1000 }}"></svg>
+                          <div class="clarity-pck__image clarity-pck__image--{{ section.settings.image_crop }}">
+                            <div class="clarity-pck__image__wrapper">
+                              <svg class="clarity-pck__svg-sizer" viewBox="0 0 {{ image_crop_width | default: 1000 }} {{ image_crop_height | default: 1000 }}"></svg>
                               {%- capture sizes -%}
                                 (max-width: 480px) {{ section.settings.base_width | append: 'vw' | default: '90vw' }}, {{ section.settings.base_width | divided_by: section.settings.per_row | divided_by: 2 | append: 'vw' | default: '33vw' }}
                               {%- endcapture -%}
@@ -415,8 +415,8 @@ https://flickity.metafizzy.co
                           </div>
                         {%- endif -%}
                       {%- endif -%}
-                      <div class="lumin-pck__text-area">
-                        <div class="lumin-pck__text lumin-pck__rte">
+                      <div class="clarity-pck__text-area">
+                        <div class="clarity-pck__text clarity-pck__rte">
                           <p>{{ block.settings.product.title | default: collection.title }}</p>
                         </div>
                       </div>
@@ -428,11 +428,11 @@ https://flickity.metafizzy.co
           {%- endfor -%}
         </div>
         {%- if section.settings.show_arrows != blank -%}
-          <div class="lumin-pck__videos-nav">
-            <div class="lumin-pck__nav-button lumin-pck__nav-button--prev">
+          <div class="clarity-pck__videos-nav">
+            <div class="clarity-pck__nav-button clarity-pck__nav-button--prev">
               <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm3 5.753l-6.44 5.247 6.44 5.263-.678.737-7.322-6 7.335-6 .665.753z" fill="{{ section.settings.border_color }}"/></svg>
             </div>
-            <div class="lumin-pck__nav-button lumin-pck__nav-button--next">
+            <div class="clarity-pck__nav-button clarity-pck__nav-button--next">
               <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm-3 5.753l6.44 5.247-6.44 5.263.678.737 7.322-6-7.335-6-.665.753z" fill="{{ section.settings.border_color }}"/></svg>
             </div>
           </div>
@@ -724,7 +724,7 @@ https://flickity.metafizzy.co
 }
 {% endschema %}
 {%- comment -%} JSON Settings {%- endcomment -%}
-<script type="application/json" data-lumin-pck="{{ section_id }}">
+<script type="application/json" data-clarity-pck="{{ section_id }}">
   {
     "id": {{ section_id | json }},
     "autoplay": {{ section.settings.autoplay | times: 1000 | json }}
@@ -732,17 +732,17 @@ https://flickity.metafizzy.co
 </script>
 
 {%- comment -%} External scripts {%- endcomment -%}
-<script data-lumin-pck-external-js="{{ section_id }}" src="https://cdn.shopify.com/s/files/1/0577/7673/4361/files/flickity-2.3.0.pkgd.min.js?v=1671485005" defer></script>
+<script data-clarity-pck-external-js="{{ section_id }}" src="https://cdn.shopify.com/s/files/1/0577/7673/4361/files/flickity-2.3.0.pkgd.min.js?v=1671485005" defer></script>
 {%- comment -%} JavaScript {%- endcomment -%}
-<script data-lumin-pck-js="{{ section_id }}" type="module" defer>
+<script data-clarity-pck-js="{{ section_id }}" type="module" defer>
 (function(){
 
-  const luminPack= {
+  const clarityPack= {
     settings: {},
     load: function(section){
-      const elem = section.querySelector(`#slider-${luminPack.settings.id}`);
+      const elem = section.querySelector(`#slider-${clarityPack.settings.id}`);
 
-      luminPack.flkty = new Flickity( elem, {
+      clarityPack.flkty = new Flickity( elem, {
         cellAlign: JSON.parse(getComputedStyle(section).getPropertyValue('--cell-align')),
         autoPlay: this.settings.autoplay,
         draggable: JSON.parse(getComputedStyle(section).getPropertyValue('--draggable')),
@@ -761,7 +761,7 @@ https://flickity.metafizzy.co
               if (videos.length) {
                 videos.forEach(video => video.pause());
                 videos[cellIndex].play();
-                const activeCheck = videos[cellIndex].parentNode.querySelector('.lumin-pck__sound-button').classList.contains('lumin-pck__sound-button--on');
+                const activeCheck = videos[cellIndex].parentNode.querySelector('.clarity-pck__sound-button').classList.contains('clarity-pck__sound-button--on');
                 if (activeCheck) {
                   videos[cellIndex].muted = false;
                 }
@@ -776,7 +776,7 @@ https://flickity.metafizzy.co
             if (videos.length) {
               videos.forEach(video => video.pause());
               videos[cellIndex].play();
-              const activeCheck = videos[cellIndex].parentNode.querySelector('.lumin-pck__sound-button').classList.contains('lumin-pck__sound-button--on');
+              const activeCheck = videos[cellIndex].parentNode.querySelector('.clarity-pck__sound-button').classList.contains('clarity-pck__sound-button--on');
               if (activeCheck) {
                 videos[cellIndex].muted = false;
               }
@@ -784,7 +784,7 @@ https://flickity.metafizzy.co
           },
           ready: () => {
             setTimeout(() => {
-              elem.classList.add('lumin-pck__stretch-height');
+              elem.classList.add('clarity-pck__stretch-height');
               const videos = section.querySelectorAll('video');
               if (videos.length) {
                 videos[0].play();
@@ -794,30 +794,30 @@ https://flickity.metafizzy.co
         }
       });
 
-      var previousButton = section.querySelector('.lumin-pck__nav-button--prev');
+      var previousButton = section.querySelector('.clarity-pck__nav-button--prev');
       if (typeof previousButton != 'undefined' && previousButton != null) {
         previousButton.addEventListener( 'click', function() {
-          luminPack.flkty.previous();
+          clarityPack.flkty.previous();
         });
       }
 
-      var nextButton = section.querySelector('.lumin-pck__nav-button--next');
+      var nextButton = section.querySelector('.clarity-pck__nav-button--next');
       if (typeof nextButton != 'undefined' && nextButton != null) {
         nextButton.addEventListener( 'click', function() {
-          luminPack.flkty.next();
+          clarityPack.flkty.next();
         });
       }
 
-      var soundButtons = section.querySelectorAll('.lumin-pck__sound-button');
+      var soundButtons = section.querySelectorAll('.clarity-pck__sound-button');
       if (typeof soundButtons != 'undefined' && soundButtons != null) {
         soundButtons.forEach((button, index) => {
           button.addEventListener('click', function() {
             const videos = section.querySelectorAll('video');
             if (videos.length) {
               videos.forEach(video => video.muted = true);
-              const selectedVideo = videos[luminPack.flkty.selectedIndex];
+              const selectedVideo = videos[clarityPack.flkty.selectedIndex];
 
-              if (button.classList.contains('lumin-pck__sound-button--on')) {
+              if (button.classList.contains('clarity-pck__sound-button--on')) {
                 // Unmute video
                 selectedVideo.muted = true;
               } else {
@@ -825,7 +825,7 @@ https://flickity.metafizzy.co
                 selectedVideo.muted = false;
               }
 
-              soundButtons.forEach(button => button.classList.toggle('lumin-pck__sound-button--on'));
+              soundButtons.forEach(button => button.classList.toggle('clarity-pck__sound-button--on'));
             }
             return false;
           });
@@ -838,20 +838,20 @@ https://flickity.metafizzy.co
   }
 
   window.addEventListener('shopify:section:unload', function (e) {
-    const settings = document.querySelector(`[data-lumin-pck="${e.detail.sectionId}"]`);
+    const settings = document.querySelector(`[data-clarity-pck="${e.detail.sectionId}"]`);
     const sectionId = e.detail.sectionId;
     const section = document.querySelector(`#LM--${e.detail.sectionId}`);
-    if (sectionId == luminPack.settings.id){
-      luminPack.unload(section);
+    if (sectionId == clarityPack.settings.id){
+      clarityPack.unload(section);
     }
   });
 
-  luminPack.settings = JSON.parse(document.querySelector('[data-lumin-pck="{{ section_id }}"]').innerHTML);
+  clarityPack.settings = JSON.parse(document.querySelector('[data-clarity-pck="{{ section_id }}"]').innerHTML);
   const sectionId = {{ section_id | json }};
   const section = document.querySelector(`#LM--${sectionId}`);
 
-  if (sectionId == luminPack.settings.id){
-    luminPack.load(section);
+  if (sectionId == clarityPack.settings.id){
+    clarityPack.load(section);
   }
 })()
 </script>

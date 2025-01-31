@@ -124,11 +124,11 @@
               class="banner__heading inline-richtext {{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
             >
-              {{ block.settings.heading | replace: '[', '<span class="lumin-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="lumin-text__fancy2">' | replace: '))', '</span>' }}
+              {{ block.settings.heading | replace: '[', '<span class="clarity-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="clarity-text__fancy2">' | replace: '))', '</span>' }}
             </h2>
           {%- when 'text' -%}
             <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-              <p>{{ block.settings.text | replace: '[', '<span class="lumin-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="lumin-text__fancy2">' | replace: '))', '</span>' }}</p>
+              <p>{{ block.settings.text | replace: '[', '<span class="clarity-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="clarity-text__fancy2">' | replace: '))', '</span>' }}</p>
             </div>
          
           {%- when 'buttons' -%}

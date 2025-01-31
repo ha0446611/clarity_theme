@@ -1,6 +1,6 @@
 <section
   id="MainProduct-{{ section.id }}"
-  class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }} LM--{{ section.id }} lumin-section__main lumin-section__section"
+  class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }} LM--{{ section.id }} clarity-section__main clarity-section__section"
   data-section="{{ section.id }}"
 >
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
@@ -10,7 +10,7 @@
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
   {{ 'component-quantity-breaks.css' | asset_url | stylesheet_tag }}
-  {{ 'lumin-mega.css' | asset_url | stylesheet_tag }}
+  {{ 'clarity-mega.css' | asset_url | stylesheet_tag }}
   {%- if product.quantity_price_breaks_configured? -%}
     {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
   {%- endif -%}
@@ -61,7 +61,7 @@
      }
        {% endif %}
 
-    .lumin-slider.slider.slider--mobile {
+    .clarity-slider.slider.slider--mobile {
        scroll-padding-left: 0rem !important;
       }
      .grid--peek.slider--mobile {
@@ -119,7 +119,7 @@
      {% if section.settings.show_container %}
        
       @media screen and (min-width: 601px) {
-    .lumin-container {
+    .clarity-container {
     border: 1px solid {{section.settings.container_border_color}};
     border-radius: {{section.settings.container_radius}}px;
     background: {{section.settings.container_color}};
@@ -129,7 +129,7 @@
         {% endif %}
     {% if section.settings.show_container_mb %}
     @media screen and (max-width: 600px){
-    .lumin-container-mb {
+    .clarity-container-mb {
       border-radius: {{section.settings.container_radius_mb}}px;
       {% if section.settings.show_container_mb %}
       border: 1px solid {{section.settings.container_border_color_mb}};
@@ -196,7 +196,7 @@
   {% assign show_feature_media = section.settings.show_feature_media %}
   <div class="page-width">
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} {% if section.settings.gallery_layout == 'vertical_right' or section.settings.gallery_layout == 'vertical_left' %} product--thumbnail{% else %} product--{{ section.settings.gallery_layout }}{% endif %} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-      <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide lumin-quick-add-show{% endif %}">
+      <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide clarity-quick-add-show{% endif %}">
         {% if section.settings.gallery_layout == 'vertical_right' or section.settings.gallery_layout == 'vertical_left' %}
         {% render 'product-media-gallery-vertical', variant_images: variant_images, show_feature_media: show_feature_media %}
         {% else %}
@@ -218,11 +218,11 @@
                {% else %}
              {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}
              {% endif %}
-          {% if section.settings.show_container_mb %}lumin-container-mb{% endif %}
-          {% if section.settings.show_container and section.settings.enable_sticky_info == false %} lumin-container{% endif %}
+          {% if section.settings.show_container_mb %}clarity-container-mb{% endif %}
+          {% if section.settings.show_container and section.settings.enable_sticky_info == false %} clarity-container{% endif %}
         "
         {% if section.settings.show_container and section.settings.enable_sticky_info == false %}
-          style="--lumin-container-margin: 5rem;"
+          style="--clarity-container-margin: 5rem;"
         {% endif %}
       >
   
@@ -232,7 +232,7 @@
           data-url="{{ product.url }}"
           class="
             product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}
-            {% if section.settings.show_container and section.settings.enable_sticky_info %} lumin-container{% endif %}
+            {% if section.settings.show_container and section.settings.enable_sticky_info %} clarity-container{% endif %}
           "
         >
           {% if section.settings.show_container and section.settings.container_text != blank %}
@@ -260,7 +260,7 @@
               {% when 'feature_range' %}
               {% render 'feature-range-block', block: block %}
                {%- when 'countdown_timer' -%}
-             <div id="LM--{{ section.id }}" class="lumin-section-block lumin-section__block-id-{{ block.id }} lumin-section__block--{{ block.type }}" 
+             <div id="LM--{{ section.id }}" class="clarity-section-block clarity-section__block-id-{{ block.id }} clarity-section__block--{{ block.type }}" 
                style="zoom: {{block.settings.block_size}};" {{ block.shopify_attributes }} >
               {% render 'countdown-timer-block', block: block, section: section %}
              </div>
@@ -434,9 +434,9 @@
                     {{
                       before_text
                       | replace: '(x)', randomNumber
-                      | replace: '[', '<span class="lumin-text__fancy1">'
+                      | replace: '[', '<span class="clarity-text__fancy1">'
                       | replace: ']', '</span>'
-                      | replace: '(', '<span class="lumin-text__fancy2">'
+                      | replace: '(', '<span class="clarity-text__fancy2">'
                       | replace: ')', '</span>'
                     }}
                   </span>
@@ -451,11 +451,11 @@
                       .live-circle-{{block.id}}  {
                           box-shadow: 0 0 0 0 rgba(var(--pill-color), 0.7);
                           transform: scale(1);
-                          animation: 1.5s infinite pulsluminin;
+                          animation: 1.5s infinite pulsclarityin;
                           transition: opacity .35s ease-in-out;
                           background-color: rgba(var(--pill-color), 1);
                       }
-                   @keyframes pulsluminin {
+                   @keyframes pulsclarityin {
                         0% {
                             transform: scale(.95);
                             box-shadow: 0 0 0 0 rgba(var(--pill-color), 0.6);
@@ -872,7 +872,7 @@
 
                 {% elsif block.settings.field_style == 'date' %}
                   <style>
-                    .custom.form__label{margin-bottom: 0.6rem}.field.custom{margin-top:0}.custom .field__input{padding-top:0.8rem;font-family: var(--font-body-family);color: rgba(var(--color-forluminround),.75);}
+                    .custom.form__label{margin-bottom: 0.6rem}.field.custom{margin-top:0}.custom .field__input{padding-top:0.8rem;font-family: var(--font-body-family);color: rgba(var(--color-forclarityround),.75);}
                   </style>
                   <div class="block-{{ block.id }}-padding" {{ block.shopify_attributes }}>
                     <label class="form__label form__label-{{block.id}}{% if block.settings.label_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.label_style == 'subtitle' %} subtitle{% endif %} custom" for="your-text--{{ block.id }}">
@@ -903,7 +903,7 @@
                 </div>
               {%- when 'price' -%}
                 <style>
-                    .lumin-price {
+                    .clarity-price {
                           font-size: {{block.settings.price_size}}px !important;
                           display: flex;
                           align-items: center;
@@ -979,14 +979,14 @@
                       product: product,
                       use_variant: true,
                       show_badges: true,
-                      price_class: 'lumin-price'
+                      price_class: 'clarity-price'
                     -%}
                   {% else %}
                     {%- render 'price_2',
                       product: product,
                       use_variant: true,
                       show_badges: true,
-                      price_class: 'lumin-price'
+                      price_class: 'clarity-price'
                     -%}
                   {% endif %}
                 </div>
@@ -1538,7 +1538,7 @@
                                 >
                                   <button
                                     id="ProductPopup-{{ block.id }}"
-                                    class="form__label form__label-variant_picker product-popup-modal__button link lumin-popup {% if block.settings.label_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.label_style == 'subtitle' %} subtitle{% endif %}"
+                                    class="form__label form__label-variant_picker product-popup-modal__button link clarity-popup {% if block.settings.label_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.label_style == 'subtitle' %} subtitle{% endif %}"
                                     type="button"
                                     aria-haspopup="dialog"
                                   >
@@ -1830,7 +1830,7 @@
                                 >
                                   <button
                                     id="ProductPopup-{{ block.id }}"
-                                    class="form__label form__label-variant_picker product-popup-modal__button link lumin-popup {% if block.settings.label_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.label_style == 'subtitle' %} subtitle{% endif %}"
+                                    class="form__label form__label-variant_picker product-popup-modal__button link clarity-popup {% if block.settings.label_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.label_style == 'subtitle' %} subtitle{% endif %}"
                                     type="button"
                                     aria-haspopup="dialog"
                                   >
@@ -1914,7 +1914,7 @@
                                 >
                                   <button
                                     id="ProductPopup-{{ block.id }}"
-                                    class="form__label form__label-variant_picker product-popup-modal__button link lumin-popup {% if block.settings.label_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.label_style == 'subtitle' %} subtitle{% endif %}"
+                                    class="form__label form__label-variant_picker product-popup-modal__button link clarity-popup {% if block.settings.label_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.label_style == 'subtitle' %} subtitle{% endif %}"
                                     type="button"
                                     aria-haspopup="dialog"
                                   >
@@ -2332,7 +2332,7 @@
                        padding: 0 7rem 0 0;
                        font-size:{{block.settings.head_size}}px;
                    }
-                   .lumin-slider-buttons {
+                   .clarity-slider-buttons {
                          gap: 1rem;
                         /* margin-top: var(--lm-slide-padding);*/
                          z-index: 1;
@@ -2341,7 +2341,7 @@
                          top:calc(5px + var(--lm-slide-padding));
                          zoom:0.8;
                      }
-                   .lumin-slider-button {
+                   .clarity-slider-button {
                         /* background: rgba(var(--color-button), 0.3) !important;*/
                          border: 1px solid rgba(var(--color-foreground)) !important;
                          width: 30px !important;
@@ -2466,10 +2466,10 @@
                     </div>
 
                     {%- if number_of_block > 1 -%}
-                      <div class="slider-buttons no-js-hidden lumin-slider-buttons color-{{ block.settings.color_scheme }} gradient ">
+                      <div class="slider-buttons no-js-hidden clarity-slider-buttons color-{{ block.settings.color_scheme }} gradient ">
                         <button
                           type="button"
-                          class="slider-button slider-button--prev lumin-slider-button"
+                          class="slider-button slider-button--prev clarity-slider-button"
                           name="previous"
                           aria-label="{{ 'general.slider.previous_slide' | t }}"
                         >
@@ -2503,7 +2503,7 @@
 
                         <button
                           type="button"
-                          class="slider-button slider-button--next lumin-slider-button"
+                          class="slider-button slider-button--next clarity-slider-button"
                           name="next"
                           aria-label="{{ 'general.slider.next_slide' | t }}"
                         >
@@ -2661,7 +2661,7 @@
       </div>
       {%- if section.settings.media_position == 'right' -%}
         {% comment %} Duplicate gallery to display after product content on tablet/desktop breakpoint {% endcomment %}
-        <div class="grid__item product__media-wrapper small-hide lumin-quick-add-hide">
+        <div class="grid__item product__media-wrapper small-hide clarity-quick-add-hide">
            {% if section.settings.gallery_layout == 'vertical_right' or section.settings.gallery_layout == 'vertical_left' %}
         {% render 'product-media-gallery-vertical', variant_images: variant_images, show_feature_media: show_feature_media, is_duplicate: true %}
         {% else %}
@@ -3428,7 +3428,7 @@
     },
      {
       "type": "review",
-      "name": "Lumin Review",
+      "name": "clarity Review",
       "limit": 1,
        "settings": [
          {
@@ -3529,7 +3529,7 @@
      {
     "type": "header",
     "content": "Note",
-    "info": "Make sure to add \"Lumin Review\" section in order to work this block correctly"
+    "info": "Make sure to add \"clarity Review\" section in order to work this block correctly"
      }
        ]
     },
@@ -4258,7 +4258,7 @@
       "settings": [
          {
         "type": "paragraph",
-        "content": "Use this [tutorial](https://help.lumintheme.com/lumin-theme-documentation/auto-generate-tabs-with-the-products-content) to auto generate tabs with the product's description"
+        "content": "Use this [tutorial](https://help.claritytheme.com/clarity-theme-documentation/auto-generate-tabs-with-the-products-content) to auto generate tabs with the product's description"
       },
         {
         "type": "color_scheme",
@@ -4643,7 +4643,7 @@
         "max": 20,
         "step": 1,
         "unit": "px",
-        "label": "t:settings_schema.lumin-freeshipping-bar.settings.colors.option__1",
+        "label": "t:settings_schema.clarity-freeshipping-bar.settings.colors.option__1",
         "default": 3
       },
       {
@@ -4653,7 +4653,7 @@
         "max": 24,
         "step": 1,
         "unit": "px",
-        "label": "t:settings_schema.lumin-freeshipping-bar.settings.colors.option__2",
+        "label": "t:settings_schema.clarity-freeshipping-bar.settings.colors.option__2",
         "default": 0
       },
         {
@@ -4738,7 +4738,7 @@
         },
         {
           "type": "paragraph",
-          "content": "[Use this tutorial to setup](https://help.lumintheme.com/lumin-theme-documentation/product-page/quantity-breaks-discount)"
+          "content": "[Use this tutorial to setup](https://help.claritytheme.com/clarity-theme-documentation/product-page/quantity-breaks-discount)"
          },
          {
           "type": "select",
@@ -5512,7 +5512,7 @@
         },
         {
           "type": "paragraph",
-          "content": "[Use this tutorial to setup](https://help.lumintheme.com/lumin-theme-documentation/lumintheme-exclusive/custom-color-and-image-swatches)"
+          "content": "[Use this tutorial to setup](https://help.claritytheme.com/clarity-theme-documentation/claritytheme-exclusive/custom-color-and-image-swatches)"
         },
          {
         "type": "select",
@@ -5593,7 +5593,7 @@
         },
         {
           "type": "paragraph",
-          "content": "[Use this tutorial for size chart](https://help.lumintheme.com/lumin-theme-documentation/adding-a-size-chart-to-lumin-theme)"
+          "content": "[Use this tutorial for size chart](https://help.claritytheme.com/clarity-theme-documentation/adding-a-size-chart-to-clarity-theme)"
         },
         {
           "type": "text",
@@ -6185,7 +6185,7 @@
       "settings": [
         {
           "type": "paragraph",
-          "content": "[Use this tutorial for size chart](https://help.lumintheme.com/lumin-theme-documentation/adding-a-size-chart-to-lumin-theme)"
+          "content": "[Use this tutorial for size chart](https://help.claritytheme.com/clarity-theme-documentation/adding-a-size-chart-to-clarity-theme)"
         },
         {
           "type": "text",
@@ -7326,7 +7326,7 @@
           "id": "payment_icon",
           "label": "Payment Methods",
           "default": "visa,master,paypal,apple_pay,shopify-pay,google-pay",
-          "info": "Add the payment method keys separated by (,) commas. (e.g., visa,master,paypal,apple_pay). You can find all payment methods [here](https://lumintheme.com/pages/payment-method-list)."
+          "info": "Add the payment method keys separated by (,) commas. (e.g., visa,master,paypal,apple_pay). You can find all payment methods [here](https://claritytheme.com/pages/payment-method-list)."
         },
          {
       "type": "select",

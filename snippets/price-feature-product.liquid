@@ -18,7 +18,7 @@
     assign target = product
   endif
 
-  assign lumin_class = 'lumin_price-' | append: section.id
+  assign clarity_class = 'clarity_price-' | append: section.id
   assign sale_zoom = 'lm-style-2-sale-' | append: section.id
   assign lm_badge = 'lm-badge-' | append: section.id
   assign lm_sale = 'lm-sale-' | append: section.id
@@ -81,7 +81,7 @@
 
 <div
   class="
-    price {{ lumin_class }}
+    price {{ clarity_class }}
     {%- if price_class %} {{ price_class }}{% endif -%}
     {%- if available == false %} price--sold-out{% endif -%}
     {%- if compare_at_price > price and product.quantity_price_breaks_configured? != true %} price--on-sale{% endif -%}
@@ -91,7 +91,7 @@
   "
   style="justify-content:{{ section.settings.desktop_content_alignment }};"
 >
-  <div class="price__container {{ lumin_class }}">
+  <div class="price__container {{ clarity_class }}">
     {%- comment -%}
       Explanation of description list:
         - div.price__regular: Displayed when there are no variants on sale

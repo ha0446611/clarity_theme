@@ -1,4 +1,4 @@
-{% assign dummy_image = 'lifestyle-2' | placeholder_svg_tag: "placeholder-svg LuminSlideshow-image LuminSlideshow-image--dummy" %}
+{% assign dummy_image = 'lifestyle-2' | placeholder_svg_tag: "placeholder-svg claritySlideshow-image claritySlideshow-image--dummy" %}
 {% assign loader_background_color = section.settings.loader_background_color %}
 
 {% assign fade = section.settings.fade %}
@@ -122,7 +122,7 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
 
 <style>
 
-  .LuminSlideshow-container--loading *{
+  .claritySlideshow-container--loading *{
   	opacity: 0;
   }
   
@@ -130,8 +130,8 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
 </style>
 
 <div
-     class="LuminSlideshowOptions"
-     data-Lumin-slideshow-section-id="{{ section.id }}"
+     class="claritySlideshowOptions"
+     data-clarity-slideshow-section-id="{{ section.id }}"
      data-autoplay="{{ autoplay }}"
      data-autoplay-speed="{{ autoplay_speed }}"
 	 data-enable-parallax="{{ parallax }}"
@@ -155,11 +155,11 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
      ></div>
 
 <div 
-     data-Lumin-slideshow-section-id="{{ section.id }}"
-     class="LuminSlideshow-container 
-            LuminSlideshow-container--loading
-            LuminSlideshow-container--dots-style-{{ dots_style }}
-            LuminSlideshow-container--{{ section.id }}"
+     data-clarity-slideshow-section-id="{{ section.id }}"
+     class="claritySlideshow-container 
+            claritySlideshow-container--loading
+            claritySlideshow-container--dots-style-{{ dots_style }}
+            claritySlideshow-container--{{ section.id }}"
      
      data-arrows-style="{{ arrows_style }}"
      data-arrows-style-mobile="{{ arrows_style_mobile }}"
@@ -167,11 +167,11 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
      data-dots-style="{{ dots_style }}">
 
 <div data-slideshow-section-id="{{ section.id }}" 
-     class="LuminSlideshow--loading 
-            LuminSlideshow 
-            LuminSlideshow--{{ section.id }}
-            {% if natural_height %}LuminSlideshow-cell--natural-desktop{% endif %}
-            {% if natural_mobile_height %} LuminSlideshow-cell--natural-mobile{% endif %}">
+     class="claritySlideshow--loading 
+            claritySlideshow 
+            claritySlideshow--{{ section.id }}
+            {% if natural_height %}claritySlideshow-cell--natural-desktop{% endif %}
+            {% if natural_mobile_height %} claritySlideshow-cell--natural-mobile{% endif %}">
 
   
   {% for block in section.blocks %}
@@ -222,7 +222,7 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   {% assign image_link = block.settings.image_link %}
   {% assign image_link_size = image_link | size %}
   
-    <div  class="LuminSlideshow-cell LuminSlideshow-cell--{{block.id}}">
+    <div  class="claritySlideshow-cell claritySlideshow-cell--{{block.id}}">
 
             
 	  {% assign is_empty = true %}
@@ -268,7 +268,7 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
       {% if parallax %}
       <div class="Parallax-parent Parallax-parent--desktop">
         <div class="Parallax-animation">
-    	<div class="LuminSlideshow-parallax LuminSlideshow-parallax--desktop LuminSlideshow-parallax--lazy" 
+    	<div class="claritySlideshow-parallax claritySlideshow-parallax--desktop claritySlideshow-parallax--lazy" 
              data-sizes="auto"
               
             >
@@ -278,7 +278,7 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
 
    
       
-      <img class="LuminSlideshow-image--lazy LuminSlideshow-image LuminSlideshow-image--desktop "
+      <img class="claritySlideshow-image--lazy claritySlideshow-image claritySlideshow-image--desktop "
                  src="{{ image_desktop | img_url: '300x' }}"
       
                   data-srcset="
@@ -315,10 +315,10 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
     {% if parallax_mobile %}
       <div class="Parallax-parent Parallax-parent--mobile">
         <div class="Parallax-animation">
-    	<div class="LuminSlideshow-parallax LuminSlideshow-parallax--mobile LuminSlideshow-parallax--lazy" >
+    	<div class="claritySlideshow-parallax claritySlideshow-parallax--mobile claritySlideshow-parallax--lazy" >
     {% endif %}
       
-      <img class="LuminSlideshow-image--lazy LuminSlideshow-image LuminSlideshow-image--mobile"
+      <img class="claritySlideshow-image--lazy claritySlideshow-image claritySlideshow-image--mobile"
            loading="lazy"
            src="{{ image_mobile | img_url: '300x' }}"
            data-src="{{ image_mobile | img_url: '800x' }}"
@@ -338,33 +338,33 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
       {% endif %}
 
        {% if image_link_size > 0 %}
-      <a class="LuminSlideshow-clickable" {% if clickable_image_new_tab %}target="_blank"{% endif %} href="{{ image_link }}"></a>
+      <a class="claritySlideshow-clickable" {% if clickable_image_new_tab %}target="_blank"{% endif %} href="{{ image_link }}"></a>
       {% endif %}
       
       
-      <div class="LuminSlideshow-textbox-container--parent" data-cell-text="{{ button_text }}{{ button_text_2 }}{{ title }}{{ subtitle }}">
-        <div class="LuminSlideshow-textbox-container--child">
-          <div class="LuminSlideshow-textbox {{ block.settings.text_align }}">
-            <div class="LuminSlideshow-textbox-container--alignment">
+      <div class="claritySlideshow-textbox-container--parent" data-cell-text="{{ button_text }}{{ button_text_2 }}{{ title }}{{ subtitle }}">
+        <div class="claritySlideshow-textbox-container--child">
+          <div class="claritySlideshow-textbox {{ block.settings.text_align }}">
+            <div class="claritySlideshow-textbox-container--alignment">
                  
-              <div class="LuminSlideshow-title-container">   
-                 <h2 class="LuminSlideshow-title">{{ title | newline_to_br }}</h2>
+              <div class="claritySlideshow-title-container">   
+                 <h2 class="claritySlideshow-title">{{ title | newline_to_br }}</h2>
                 </div>
               
-              <div class="LuminSlideshow-subtitle-container"> 
-              	<p class="LuminSlideshow-subtitle">{{ subtitle | newline_to_br }}</p>
+              <div class="claritySlideshow-subtitle-container"> 
+              	<p class="claritySlideshow-subtitle">{{ subtitle | newline_to_br }}</p>
               </div>
               
-              <div class="LuminSlideshow-buttons"> 
+              <div class="claritySlideshow-buttons"> 
                 {% if button_text != "" %} 
         		<a 
-                    class="LuminSlideshow-button LuminSlideshow-button--1"
+                    class="claritySlideshow-button claritySlideshow-button--1"
                    href="{%if button_link != blank %}{{ button_link }}{% else %}{{ shop.url }}{% endif %}">{{ button_text }}</a>				
                
 {% endif %}
                 {% if button_text_2 != "" %}
         		<a 
-                    class="LuminSlideshow-button LuminSlideshow-button--2"
+                    class="claritySlideshow-button claritySlideshow-button--2"
                    href="{%if button_link_2 != blank %}{{ button_link_2}}{% else %}{{ shop.url }}{% endif %}">{{ button_text_2 }}</a>
 				{% endif %}
               </div>
@@ -377,7 +377,7 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
       
       
       <style>        
-        .LuminSlideshow-cell--{{block.id}}:after{
+        .claritySlideshow-cell--{{block.id}}:after{
             content:'';
             width: 100%;
             height: 100%;
@@ -393,7 +393,7 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
 
         }
         
-        .LuminSlideshow-cell--{{block.id}} .LuminSlideshow-image{
+        .claritySlideshow-cell--{{block.id}} .claritySlideshow-image{
           
           {% if block.settings.focal_point == 'full_width' %}
             {% if parallax %}
@@ -407,7 +407,7 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
         }
         
         {% if block.settings.focal_point == 'full_width' %}
-         .LuminSlideshow-cell--{{block.id}} .LuminSlideshow-parallax--desktop{
+         .claritySlideshow-cell--{{block.id}} .claritySlideshow-parallax--desktop{
               {% if parallax %}
 /*                 object-fit: auto;  */
             {% else %}
@@ -417,27 +417,27 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
         }
         {% endif %}
         
-        .LuminSlideshow-cell--{{block.id}} .LuminSlideshow-parallax--desktop{
+        .claritySlideshow-cell--{{block.id}} .claritySlideshow-parallax--desktop{
 /*         	background-position: {{ block.settings.focal_point }}; */
         }
         
-        .LuminSlideshow-cell--{{ block.id}} .LuminSlideshow-title{
+        .claritySlideshow-cell--{{ block.id}} .claritySlideshow-title{
           font-size: {{ block.settings.title_font_size }}px;
         }
         
-        .LuminSlideshow-cell--{{ block.id}} .LuminSlideshow-top-text,
-        .LuminSlideshow-cell--{{ block.id}} .LuminSlideshow-subtitle{
+        .claritySlideshow-cell--{{ block.id}} .claritySlideshow-top-text,
+        .claritySlideshow-cell--{{ block.id}} .claritySlideshow-subtitle{
           font-size: {{ block.settings.subtitle_font_size }}px;
         }
         
-        .LuminSlideshow-cell--{{ block.id }} .LuminSlideshow-button{
+        .claritySlideshow-cell--{{ block.id }} .claritySlideshow-button{
           font-size: {{ block.settings.button_text_size }}px;
         }
         
         
         @media (max-width: 749px){
           
-          .LuminSlideshow-cell--{{block.id}} .LuminSlideshow-image{
+          .claritySlideshow-cell--{{block.id}} .claritySlideshow-image{
           {% if block.settings.focal_point_mobile == 'full_width' %}
 			object-fit: contain;
             object-position: center;
@@ -451,7 +451,7 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
           
           
           
-         .LuminSlideshow-cell--{{block.id}} .LuminSlideshow-parallax--mobile{
+         .claritySlideshow-cell--{{block.id}} .claritySlideshow-parallax--mobile{
               
            {% if is_full_width == false %}
     background-position: initial;
@@ -468,20 +468,20 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
           
 
           
-           .LuminSlideshow-cell--{{block.id}} .LuminSlideshow-parallax--mobile{
+           .claritySlideshow-cell--{{block.id}} .claritySlideshow-parallax--mobile{
 /*         	background-position: {{ block.settings.focal_point_mobile }}; */
         	}
 
-          .LuminSlideshow-cell--{{ block.id}} .LuminSlideshow-title{
+          .claritySlideshow-cell--{{ block.id}} .claritySlideshow-title{
             font-size: {{ block.settings.title_font_size_mobile }}px;
           }
           
-          .LuminSlideshow-cell--{{ block.id}} .LuminSlideshow-top-text,
-          .LuminSlideshow-cell--{{ block.id}} .LuminSlideshow-subtitle{
+          .claritySlideshow-cell--{{ block.id}} .claritySlideshow-top-text,
+          .claritySlideshow-cell--{{ block.id}} .claritySlideshow-subtitle{
           	font-size: {{ block.settings.subtitle_font_size_mobile }}px;
           }
           
-          .LuminSlideshow-cell--{{ block.id }} .LuminSlideshow-button{
+          .claritySlideshow-cell--{{ block.id }} .claritySlideshow-button{
             font-size: {{ block.settings.button_text_size_mobile }}px;
           }
         }
@@ -491,7 +491,7 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
         {% assign text_shadow = block.settings.text_shadow %}
 
         {% if text_shadow != 0  %}        
-        .LuminSlideshow-cell--{{ block.id}} .LuminSlideshow-textbox-container--parent:not([data-cell-text=""]) .LuminSlideshow-textbox-container--alignment:after {
+        .claritySlideshow-cell--{{ block.id}} .claritySlideshow-textbox-container--parent:not([data-cell-text=""]) .claritySlideshow-textbox-container--alignment:after {
             content: "";
             position: absolute;
             top: 0px;
@@ -511,30 +511,30 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
         {% comment %} Button {% endcomment %}
         
         
-        .LuminSlideshow-cell--{{ block.id}} .LuminSlideshow-button--1,
-        .LuminSlideshow-cell--{{ block.id}} .LuminSlideshow-button--1:active,
-        .LuminSlideshow-cell--{{ block.id}} .LuminSlideshow-button--1:hover,
-        .LuminSlideshow-cell--{{ block.id}} .LuminSlideshow-button--1:focus{
+        .claritySlideshow-cell--{{ block.id}} .claritySlideshow-button--1,
+        .claritySlideshow-cell--{{ block.id}} .claritySlideshow-button--1:active,
+        .claritySlideshow-cell--{{ block.id}} .claritySlideshow-button--1:hover,
+        .claritySlideshow-cell--{{ block.id}} .claritySlideshow-button--1:focus{
           background-color: {{ button_background_color }};
           color: {{ button_text_color }};
           border-color: {{ button_border_color }};
         }
         
-        .LuminSlideshow-cell--{{ block.id}} .LuminSlideshow-button--2,
-        .LuminSlideshow-cell--{{ block.id}} .LuminSlideshow-button--2:active,
-        .LuminSlideshow-cell--{{ block.id}} .LuminSlideshow-button--2:hover,
-        .LuminSlideshow-cell--{{ block.id}} .LuminSlideshow-button--2:focus{
+        .claritySlideshow-cell--{{ block.id}} .claritySlideshow-button--2,
+        .claritySlideshow-cell--{{ block.id}} .claritySlideshow-button--2:active,
+        .claritySlideshow-cell--{{ block.id}} .claritySlideshow-button--2:hover,
+        .claritySlideshow-cell--{{ block.id}} .claritySlideshow-button--2:focus{
           background-color: {{ button_background_color_2 }};
           color: {{ button_text_color_2 }};
           border-color: {{ button_border_color_2 }};
         }
         
-        .LuminSlideshow-cell--{{ block.id}} .LuminSlideshow-title{
+        .claritySlideshow-cell--{{ block.id}} .claritySlideshow-title{
           color: {{ block.settings.title_color }} !important;
         }
         
-        .LuminSlideshow-cell--{{ block.id}} .LuminSlideshow-top-text,
-                .LuminSlideshow-cell--{{ block.id}} .LuminSlideshow-subtitle{
+        .claritySlideshow-cell--{{ block.id}} .claritySlideshow-top-text,
+                .claritySlideshow-cell--{{ block.id}} .claritySlideshow-subtitle{
           color: {{ block.settings.subtitle_color }} !important;
         }
         
@@ -549,16 +549,16 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   {% endfor %}
 
 
-  <div class="LuminSlideshow-progress-container">
-    <div class="LuminSlideshow-progress"></div>
+  <div class="claritySlideshow-progress-container">
+    <div class="claritySlideshow-progress"></div>
   </div>
   
   </div>
 
  </div>
-  <div class="LuminSlideshow-arrows">
-    <button class="LuminSlideshow-prev flickity-button flickity-prev-next-button previous" type="button" aria-label="Previous"><svg class="flickity-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg></button>
-  <button class="LuminSlideshow-next flickity-button flickity-prev-next-button next" type="button" aria-label="Next"><svg class="flickity-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg></button>
+  <div class="claritySlideshow-arrows">
+    <button class="claritySlideshow-prev flickity-button flickity-prev-next-button previous" type="button" aria-label="Previous"><svg class="flickity-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg></button>
+  <button class="claritySlideshow-next flickity-button flickity-prev-next-button next" type="button" aria-label="Next"><svg class="flickity-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg></button>
   </div>
 
 
@@ -569,18 +569,18 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   .pv-container{overflow:hidden}.pv-container .pv-block{will-change:transform;background-repeat:no-repeat;background-position:50%;background-size:cover}.pv-container .pv-block video{position:absolute;top:0;left:0;height:100%;width:100%;object-fit:cover}.pv-container .audio-icon{height:30px;width:30px;position:absolute;top:10px;left:10px}.pv-container .audio-icon span{display:block;width:8px;height:8px;background:#fff;margin:11px 0 0 2px}.pv-container .audio-icon span:after{content:"";position:absolute;width:0;height:0;border-color:transparent #fff transparent transparent;border-style:solid;border-width:10px 14px 10px 15px;left:-13px;top:5px}.pv-container .audio-icon span:before{transform:rotate(45deg);border-radius:0 50px 0 0;content:"";position:absolute;width:13px;height:13px;border-color:#fff;border-style:double;border-width:7px 7px 0 0;left:18px;top:9px;transition:all .2s ease-out}.pv-container .audio-icon:hover span:before{transform:scale(.8) translate(-3px) rotate(42deg)}.pv-container .audio-icon.mute span:before{transform:scale(.5) translate(-15px) rotate(36deg);opacity:0}
 
   
-    .LuminSlideshow-container--loaded *{
+    .claritySlideshow-container--loaded *{
   	opacity: 1;
   }
   
-  .Lumin-slideshow-section{
+  .clarity-slideshow-section{
   	position: relative;
   }
   
   
 
   
-  .LuminSlideshow-container{
+  .claritySlideshow-container{
     max-width: 100%;
     width: 100%;
     position: relative;
@@ -589,7 +589,7 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   
 
   
-  .LuminSlideshow-container{
+  .claritySlideshow-container{
         position: relative;
         display: block;
   }
@@ -597,10 +597,10 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   
   @media (min-width: 750px){
         {% if natural_height %}
-    [data-Lumin-slideshow-section-id="{{ section.id }}"] .LuminSlideshow-textbox-container--parent,
-        [data-Lumin-slideshow-section-id="{{ section.id }}"].LuminSlideshow-container,
-    [data-Lumin-slideshow-section-id="{{ section.id }}"] .LuminSlideshow-container,
-    [data-Lumin-slideshow-section-id="{{ section.id }}"] .LuminSlideshow-parallax{
+    [data-clarity-slideshow-section-id="{{ section.id }}"] .claritySlideshow-textbox-container--parent,
+        [data-clarity-slideshow-section-id="{{ section.id }}"].claritySlideshow-container,
+    [data-clarity-slideshow-section-id="{{ section.id }}"] .claritySlideshow-container,
+    [data-clarity-slideshow-section-id="{{ section.id }}"] .claritySlideshow-parallax{
        height: 0 !important; 
 
 
@@ -609,17 +609,17 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
 
   }
 
-    .LuminSlideshow-cell{
+    .claritySlideshow-cell{
     	height: 100%;
     }
     
-	[data-Lumin-slideshow-section-id="{{ section.id }}"] .LuminSlideshow-parallax{
+	[data-clarity-slideshow-section-id="{{ section.id }}"] .claritySlideshow-parallax{
              height: 0 !important; 
      	padding-bottom: calc(100% / {{ natural_height_ratio  }}); 
     }
 
     
-    .LuminSlideshow-textbox-container--child {
+    .claritySlideshow-textbox-container--child {
     display: table;
     width: 100%;
     height: 100%;
@@ -635,12 +635,12 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   {% else %}
   
   
-  [data-Lumin-slideshow-section-id="{{ section.id }}"] .LuminSlideshow-parallax,
-  [data-Lumin-slideshow-section-id="{{ section.id }}"] .flickity-viewport,
-      [data-Lumin-slideshow-section-id="{{ section.id }}"].LuminSlideshow-container,
-  	  [data-Lumin-slideshow-section-id="{{ section.id }}"] .LuminSlideshow-cell,
-    [data-Lumin-slideshow-section-id="{{ section.id }}"] .LuminSlideshow-image,
-    [data-Lumin-slideshow-section-id="{{ section.id }}"] .LuminSlideshow-textbox-container--parent{
+  [data-clarity-slideshow-section-id="{{ section.id }}"] .claritySlideshow-parallax,
+  [data-clarity-slideshow-section-id="{{ section.id }}"] .flickity-viewport,
+      [data-clarity-slideshow-section-id="{{ section.id }}"].claritySlideshow-container,
+  	  [data-clarity-slideshow-section-id="{{ section.id }}"] .claritySlideshow-cell,
+    [data-clarity-slideshow-section-id="{{ section.id }}"] .claritySlideshow-image,
+    [data-clarity-slideshow-section-id="{{ section.id }}"] .claritySlideshow-textbox-container--parent{
 
           height: {{ section_height }} !important;
       max-height: {{ section_height }} !important;
@@ -657,9 +657,9 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
     
     	
 
-    [data-Lumin-slideshow-section-id="{{ section.id }}"].LuminSlideshow-container,
-    [data-Lumin-slideshow-section-id="{{ section.id }}"] .LuminSlideshow-container,
-    [data-Lumin-slideshow-section-id="{{ section.id }}"] .LuminSlideshow-parallax{
+    [data-clarity-slideshow-section-id="{{ section.id }}"].claritySlideshow-container,
+    [data-clarity-slideshow-section-id="{{ section.id }}"] .claritySlideshow-container,
+    [data-clarity-slideshow-section-id="{{ section.id }}"] .claritySlideshow-parallax{
        	height: 0 !important; 
 
 
@@ -668,19 +668,19 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   	}
 
     
-    .LuminSlideshow-cell{
+    .claritySlideshow-cell{
     	height: 100%;
     }
   
   
   
   {% else %}
-   [data-Lumin-slideshow-section-id="{{ section.id }}"] .LuminSlideshow-parallax--mobile,
-  [data-Lumin-slideshow-section-id="{{ section.id }}"] .flickity-viewport,
-    [data-Lumin-slideshow-section-id="{{ section.id }}"].LuminSlideshow-container,
-  	[data-Lumin-slideshow-section-id="{{ section.id }}"] .LuminSlideshow-cell,
-    [data-Lumin-slideshow-section-id="{{ section.id }}"] .LuminSlideshow-image,
-    [data-Lumin-slideshow-section-id="{{ section.id }}"] .LuminSlideshow-textbox-container--parent{
+   [data-clarity-slideshow-section-id="{{ section.id }}"] .claritySlideshow-parallax--mobile,
+  [data-clarity-slideshow-section-id="{{ section.id }}"] .flickity-viewport,
+    [data-clarity-slideshow-section-id="{{ section.id }}"].claritySlideshow-container,
+  	[data-clarity-slideshow-section-id="{{ section.id }}"] .claritySlideshow-cell,
+    [data-clarity-slideshow-section-id="{{ section.id }}"] .claritySlideshow-image,
+    [data-clarity-slideshow-section-id="{{ section.id }}"] .claritySlideshow-textbox-container--parent{
         height: {{ section_height_mobile }} !important;
       	max-height: {{ section_height_mobile }};
   	}
@@ -691,7 +691,7 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   /* Pre-loader
   ============================= */
   
-[data-Lumin-slideshow-section-id="{{ section.id }}"].LuminSlideshow-container--loading:before{
+[data-clarity-slideshow-section-id="{{ section.id }}"].claritySlideshow-container--loading:before{
     left: 0;
     right: 0;
     content: '';
@@ -705,7 +705,7 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   }
 
 
-  .LuminSlideshow-container--loading:after{
+  .claritySlideshow-container--loading:after{
     opacity: 0;
     animation: preloading .5s ease .3s infinite;
     animation-delay: 1s;
@@ -721,7 +721,7 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   }
   
   {% if request.design_mode %}
-    .LuminSlideshow-container--loading:after{
+    .claritySlideshow-container--loading:after{
       	
       content: "";
       
@@ -746,8 +746,8 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   
 
 
-  .LuminSlideshow-container--loaded:after,
-  .LuminSlideshow-container--loaded:before{
+  .claritySlideshow-container--loaded:after,
+  .claritySlideshow-container--loaded:before{
     opacity: 0 !important;
     transition: all .3s ease;
     z-index: 0;
@@ -760,18 +760,18 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   ============================= */
   
 
-  .LuminSlideshow-cell{
+  .claritySlideshow-cell{
     width: 100%;
     position: relative;
     display: table;
   }
     
-  .LuminSlideshow-cell:not(.is-selected) .lazyload{
+  .claritySlideshow-cell:not(.is-selected) .lazyload{
   	display: none;
   }
   
-  .LuminSlideshow-cell:nth-child(1) .lazyload, 
-  .LuminSlideshow-cell.is-selected + .LuminSlideshow-cell .lazyload{
+  .claritySlideshow-cell:nth-child(1) .lazyload, 
+  .claritySlideshow-cell.is-selected + .claritySlideshow-cell .lazyload{
   	display: block;
   }
 
@@ -782,14 +782,14 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
     height: 100%;
   }
   
-  .LuminSlideshow-image-wrapper{
+  .claritySlideshow-image-wrapper{
     position: relative;
 
     width: 100%;
     height: 100%;
 }
 
-  .LuminSlideshow-image{
+  .claritySlideshow-image{
     object-fit: cover;
     width: 100%;
     
@@ -801,8 +801,8 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
 
 
       {% if zoom_animation == true %}
-  [id*="{{ section.id }}"] .LuminSlideshow-container--loaded .LuminSlideshow-cell:nth-child(1) img.LuminSlideshow--lazy-entered,
-  [id*='{{ section.id }}'] .LuminSlideshow-container--loaded .LuminSlideshow-cell:nth-child(1) .Parallax-animation{
+  [id*="{{ section.id }}"] .claritySlideshow-container--loaded .claritySlideshow-cell:nth-child(1) img.claritySlideshow--lazy-entered,
+  [id*='{{ section.id }}'] .claritySlideshow-container--loaded .claritySlideshow-cell:nth-child(1) .Parallax-animation{
     animation: zoom-fade 2.3s cubic-bezier(.26,.54,.32,1) 0s forwards;
 /*     	  animation-delay: .5s; */
 }
@@ -810,28 +810,28 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
     {% endif %}
   
   @media only screen and (min-width: 750px){
-    .LuminSlideshow-image--desktop,
-    .LuminSlideshow-parallax--desktop{
+    .claritySlideshow-image--desktop,
+    .claritySlideshow-parallax--desktop{
     	display: block;
     }
-    .LuminSlideshow-image--mobile,
-    .LuminSlideshow-parallax--mobile{
+    .claritySlideshow-image--mobile,
+    .claritySlideshow-parallax--mobile{
     	display: none;
     }
   }
   
   @media only screen and (max-width: 749px){
-    .LuminSlideshow-image--desktop,
-    .LuminSlideshow-parallax--desktop{
+    .claritySlideshow-image--desktop,
+    .claritySlideshow-parallax--desktop{
     	display: none;
     }
-    .LuminSlideshow-image--mobile,
-    .LuminSlideshow-parallax--mobile{
+    .claritySlideshow-image--mobile,
+    .claritySlideshow-parallax--mobile{
     	display: block;
     }
   }
 
-  .LuminSlideshow-image--dummy {
+  .claritySlideshow-image--dummy {
     position: absolute;
     top: 0;
     left: 0;
@@ -847,7 +847,7 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
 
   }
 
-  .LuminSlideshow ol li{
+  .claritySlideshow ol li{
     list-style-type: none;
   }
   
@@ -859,42 +859,42 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
 
 
   
-  .LuminSlideshow-parallax{
+  .claritySlideshow-parallax{
 /*     background-attachment: fixed; */
 /*     transform-style: preserve-3d;  */
        transform: translate3D(0, 0px, 0) scale({{ parallax_zoom }});
   }
   
   @media (max-width: 749px){
-    .LuminSlideshow-parallax{
+    .claritySlideshow-parallax{
        transform: translate3D(0, 0px, 0) scale({{ parallax_zoom_mobile }});
   }
   }
   
-/*     [data-enable-parallax="true"] + div .LuminSlideshow-cell.is-selected .LuminSlideshow-parallax{
+/*     [data-enable-parallax="true"] + div .claritySlideshow-cell.is-selected .claritySlideshow-parallax{
     background-attachment: fixed;
   }
    */
   
-    .LuminSlideshow-parallax{
+    .claritySlideshow-parallax{
   background-repeat: no-repeat;
   background-size: cover;
     min-height: 100%;
   }
  
   
-  .LuminSlideshow-parallax > img{
+  .claritySlideshow-parallax > img{
 /*   	display: none; */
   }
   
     @media (max-width: 749px){
-    .Lumin-slideshow-section--loaded .LuminSlideshow-parallax--desktop{
+    .clarity-slideshow-section--loaded .claritySlideshow-parallax--desktop{
   	display: none !important;
   }
   }
   
         @media (min-width: 750px){
-    .Lumin-slideshow-section--loaded .LuminSlideshow-parallax--mobile{
+    .clarity-slideshow-section--loaded .claritySlideshow-parallax--mobile{
   	display: none !important;
   }
   }
@@ -904,7 +904,7 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   /* Text
   ============================= */
   
-  .LuminSlideshow-textbox-container--parent{
+  .claritySlideshow-textbox-container--parent{
     
     position: absolute;
     top: 0;
@@ -916,7 +916,7 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   
   }
   
-   .LuminSlideshow-textbox-container--child{
+   .claritySlideshow-textbox-container--child{
     
    	display: table;
     width: 100%;
@@ -924,7 +924,7 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   
   }
     
-  .LuminSlideshow-textbox{
+  .claritySlideshow-textbox{
 /* 	position: absolute;
     top: 50%;
     left: 50%;
@@ -941,31 +941,31 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
     padding: 0 17px;
   }
   
-  .LuminSlideshow-textbox *{
+  .claritySlideshow-textbox *{
   text-transform: unset !important;
     letter-spacing: normal !important;
   }
   
   @media only screen and (min-width: 750px){
-       .LuminSlideshow-textbox{
+       .claritySlideshow-textbox{
           padding: 0 40px;
     }
   }
   
   
-  .LuminSlideshow-textbox *{
+  .claritySlideshow-textbox *{
   	/*color: white;*/
   }
   
-  .LuminSlideshow-top-text-container,
-  .LuminSlideshow-title-container,
-  .LuminSlideshow-subtitle-container{
+  .claritySlideshow-top-text-container,
+  .claritySlideshow-title-container,
+  .claritySlideshow-subtitle-container{
   	overflow: hidden;
   }
   
-  .LuminSlideshow-top-text,
-  .LuminSlideshow-title,
-  .LuminSlideshow-subtitle{
+  .claritySlideshow-top-text,
+  .claritySlideshow-title,
+  .claritySlideshow-subtitle{
     text-align: center;
     margin: 0;
     opacity: 0;
@@ -974,21 +974,21 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
     padding-bottom: 10px;
   }
   
-  .LuminSlideshow-title{
+  .claritySlideshow-title{
       font-weight: 500;
   }
   
-  .LuminSlideshow-top-text,
-  .LuminSlideshow-subtitle{
+  .claritySlideshow-top-text,
+  .claritySlideshow-subtitle{
   	font-weight: 300;
   }
   
-  .LuminSlideshow-top-text-container,
-  .LuminSlideshow-subtitle-container{
+  .claritySlideshow-top-text-container,
+  .claritySlideshow-subtitle-container{
   	margin-top: 10px;
   }
   
-  .LuminSlideshow-top-text{
+  .claritySlideshow-top-text{
   	padding-bottom: 0;
   }
 
@@ -1002,29 +1002,29 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   {% comment %} ## Text Animations {% endcomment %}
 
 
-  [data-Lumin-slideshow-section-id='{{ section.id }}'][data-text-animation='true']  + .LuminSlideshow-container--loaded  .LuminSlideshow-cell.is-selected .LuminSlideshow-title{
+  [data-clarity-slideshow-section-id='{{ section.id }}'][data-text-animation='true']  + .claritySlideshow-container--loaded  .claritySlideshow-cell.is-selected .claritySlideshow-title{
       animation: .8s cubic-bezier(.26,.54,.32,1) .3s forwards;
     animation-name: rise-up;
   }
   
-  [data-Lumin-slideshow-section-id='{{ section.id }}'][data-text-animation='true']  + .LuminSlideshow-container--loaded  .LuminSlideshow-cell.is-selected .LuminSlideshow-top-text,
-  [data-Lumin-slideshow-section-id='{{ section.id }}'][data-text-animation='true']  + .LuminSlideshow-container--loaded  .LuminSlideshow-cell.is-selected .LuminSlideshow-subtitle{
+  [data-clarity-slideshow-section-id='{{ section.id }}'][data-text-animation='true']  + .claritySlideshow-container--loaded  .claritySlideshow-cell.is-selected .claritySlideshow-top-text,
+  [data-clarity-slideshow-section-id='{{ section.id }}'][data-text-animation='true']  + .claritySlideshow-container--loaded  .claritySlideshow-cell.is-selected .claritySlideshow-subtitle{
         animation: 1s cubic-bezier(.26,.54,.32,1) .7s forwards;
     animation-name: rise-up;
   }
   
-    [data-Lumin-slideshow-section-id='{{ section.id }}'][data-text-animation='true']  + .LuminSlideshow-container--loaded  .LuminSlideshow-cell.is-selected .LuminSlideshow-button--1{
+    [data-clarity-slideshow-section-id='{{ section.id }}'][data-text-animation='true']  + .claritySlideshow-container--loaded  .claritySlideshow-cell.is-selected .claritySlideshow-button--1{
     animation: fade-in 2s ease 1.3s forwards;
   }
-    [data-Lumin-slideshow-section-id='{{ section.id }}'][data-text-animation='true']  + .LuminSlideshow-container--loaded .LuminSlideshow-cell.is-selected .LuminSlideshow-button--2{
+    [data-clarity-slideshow-section-id='{{ section.id }}'][data-text-animation='true']  + .claritySlideshow-container--loaded .claritySlideshow-cell.is-selected .claritySlideshow-button--2{
      animation: fade-in 2s ease 1.6s forwards;
   }
   
 
-  [data-Lumin-slideshow-section-id='{{ section.id }}'][data-text-animation='false']  + .LuminSlideshow-container--loaded .LuminSlideshow-cell.is-selected .LuminSlideshow-title,
-  [data-Lumin-slideshow-section-id='{{ section.id }}'][data-text-animation='false']  + .LuminSlideshow-container--loaded .LuminSlideshow-cell.is-selected .LuminSlideshow-subtitle,
-  [data-Lumin-slideshow-section-id='{{ section.id }}'][data-text-animation='false']  + .LuminSlideshow-container--loaded .LuminSlideshow-cell.is-selected .LuminSlideshow-top-text,
-  [data-Lumin-slideshow-section-id='{{ section.id }}'][data-text-animation='false']  + .LuminSlideshow-container--loaded .LuminSlideshow-cell.is-selected .LuminSlideshow-button{
+  [data-clarity-slideshow-section-id='{{ section.id }}'][data-text-animation='false']  + .claritySlideshow-container--loaded .claritySlideshow-cell.is-selected .claritySlideshow-title,
+  [data-clarity-slideshow-section-id='{{ section.id }}'][data-text-animation='false']  + .claritySlideshow-container--loaded .claritySlideshow-cell.is-selected .claritySlideshow-subtitle,
+  [data-clarity-slideshow-section-id='{{ section.id }}'][data-text-animation='false']  + .claritySlideshow-container--loaded .claritySlideshow-cell.is-selected .claritySlideshow-top-text,
+  [data-clarity-slideshow-section-id='{{ section.id }}'][data-text-animation='false']  + .claritySlideshow-container--loaded .claritySlideshow-cell.is-selected .claritySlideshow-button{
   	opacity: 1;
     animation: unset;
   }
@@ -1032,36 +1032,36 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
 
   
   
-  .LuminSlideshow-container:focus,
-  .LuminSlideshow-container *:focus{
+  .claritySlideshow-container:focus,
+  .claritySlideshow-container *:focus{
     outline: unset !important;
     box-shadow: unset !important;
   }
 
-  .LuminSlideshow-container .simpleParallax{
+  .claritySlideshow-container .simpleParallax{
 /*       overflow: unset !important; */
   }
   
   
   {% comment %} ## Buttons {% endcomment %}
   
-  .LuminSlideshow-button{
+  .claritySlideshow-button{
   	opacity: 0;
     transition: none;
   }
   
-  .LuminSlideshow-button:hover{
+  .claritySlideshow-button:hover{
       color: unset;
   }
   
-  .LuminSlideshow-button--1 + .LuminSlideshow-button--2{
+  .claritySlideshow-button--1 + .claritySlideshow-button--2{
       margin-left: 15px;
   }
 
   
   
   
-  .LuminSlideshow-button{
+  .claritySlideshow-button{
     display: block;
     line-height: 1.42;
     text-decoration: none;
@@ -1094,23 +1094,23 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   
           
     
-.LuminSlideshow-textbox[class*='left'] .LuminSlideshow-button{
+.claritySlideshow-textbox[class*='left'] .claritySlideshow-button{
     width: auto;
     margin: auto auto;
     margin-top: 10px;
 }
 
-.LuminSlideshow-textbox[class*='left'] .LuminSlideshow-button:nth-child(1){
+.claritySlideshow-textbox[class*='left'] .claritySlideshow-button:nth-child(1){
     margin-top: 10px;
 }
 
-.LuminSlideshow-textbox[class*='left'] .LuminSlideshow-button:nth-child(2){
+.claritySlideshow-textbox[class*='left'] .claritySlideshow-button:nth-child(2){
     margin-top: 10px;
   margin-left: 15px;
 }
 
   
-.LuminSlideshow-clickable{
+.claritySlideshow-clickable{
     position: absolute;
     left: 0;
     height: 100%;
@@ -1122,13 +1122,13 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   display: block !important;
 }
   
-  .LuminSlideshow-arrows > button{
+  .claritySlideshow-arrows > button{
       -webkit-tap-highlight-color: rgba(0,0,0,0);
 -webkit-tap-highlight-color: transparent;
   }
 
   @media (max-width: 768px){
-      .LuminSlideshow-button{
+      .claritySlideshow-button{
           padding: 9px 17px;
       }
     
@@ -1136,14 +1136,14 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   }
   
   @media (max-width: 370px){
-/*     .LuminSlideshow-buttons{
+/*     .claritySlideshow-buttons{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-        .LuminSlideshow-button{
+        .claritySlideshow-button{
             width: auto;
             display: block;
             margin-left: 0 !important;
@@ -1163,17 +1163,17 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   z-index: 0;
 }
 
-[id*='{{ section.id }}']  .flickity-enabled.is-fade .flickity-slider > .LuminSlideshow-cell.is-selected {
+[id*='{{ section.id }}']  .flickity-enabled.is-fade .flickity-slider > .claritySlideshow-cell.is-selected {
   pointer-events: auto;
   z-index: 1;
 } 
   
-  [id*='{{ section.id }}']  .LuminSlideshow-container .flickity-slider {
+  [id*='{{ section.id }}']  .claritySlideshow-container .flickity-slider {
     transform: none !important;
   }
 
 
-  [id*='{{ section.id }}']  .LuminSlideshow-cell {
+  [id*='{{ section.id }}']  .claritySlideshow-cell {
     left: 0 !important;
     opacity: 0;
     transition: transform .7s ease,opacity .2s ease;
@@ -1181,22 +1181,22 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
 
   }
 
-  [id*='{{ section.id }}']  .LuminSlideshow-cell.is-selected {
+  [id*='{{ section.id }}']  .claritySlideshow-cell.is-selected {
     opacity: 1;
     z-index: 0;
   }
   
-  [id*='{{ section.id }}']  .LuminSlideshow-cell {
+  [id*='{{ section.id }}']  .claritySlideshow-cell {
       opacity: 0 !important;
       transition: opacity 1s ease !important;
     }
   
-    .LuminSlideshow-cell.is-selected {
+    .claritySlideshow-cell.is-selected {
       opacity: 1 !important;
     }
 
   /* This adds a subtle movement for the image */
-  [id*='{{ section.id }}']  .LuminSlideshow-cell:not(.is-selected){
+  [id*='{{ section.id }}']  .claritySlideshow-cell:not(.is-selected){
 /* 	    transform: translateX(10%) !important;   */
   }
 
@@ -1205,60 +1205,60 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
 
   {% comment %} ## Alignments {% endcomment %}
   
-  .LuminSlideshow-textbox-container--alignment{
+  .claritySlideshow-textbox-container--alignment{
   	display: table;
     position: relative;
   }
   
-  .LuminSlideshow-textbox[class$='bottom-center'] .LuminSlideshow-textbox-container--alignment,
-  .LuminSlideshow-textbox[class$='--center'] .LuminSlideshow-textbox-container--alignment{
+  .claritySlideshow-textbox[class$='bottom-center'] .claritySlideshow-textbox-container--alignment,
+  .claritySlideshow-textbox[class$='--center'] .claritySlideshow-textbox-container--alignment{
   	margin: 0 auto;
   }
   
-  .LuminSlideshow-textbox[class*='right'] .LuminSlideshow-textbox-container--alignment{
+  .claritySlideshow-textbox[class*='right'] .claritySlideshow-textbox-container--alignment{
   	margin: 0 0 0 auto;
   }
   
-  .LuminSlideshow-textbox--center-left *{
+  .claritySlideshow-textbox--center-left *{
       text-align: left;
   }
 
-  .LuminSlideshow-textbox--center *{
+  .claritySlideshow-textbox--center *{
       text-align: center;
   }
 
-  .LuminSlideshow-textbox--center-right *{
+  .claritySlideshow-textbox--center-right *{
       text-align: right;
   }
   
-  [class*='LuminSlideshow-textbox--bottom']{
+  [class*='claritySlideshow-textbox--bottom']{
     	padding-bottom: 50px;
     padding-top: 40px;
        vertical-align: bottom;
   }
   
-  .LuminSlideshow-textbox--bottom-right *{
+  .claritySlideshow-textbox--bottom-right *{
      text-align: right;
   }
   
-  .LuminSlideshow-textbox--bottom-center *{
+  .claritySlideshow-textbox--bottom-center *{
      text-align: center;
   }
   
-  .LuminSlideshow-textbox--bottom-left *{
+  .claritySlideshow-textbox--bottom-left *{
      text-align: left;
   }
   
   {% comment %} ## Buttons {% endcomment %}
   
   
-  [data-Lumin-slideshow-section-id="{{ section.id }}"] .LuminSlideshow-button{
+  [data-clarity-slideshow-section-id="{{ section.id }}"] .claritySlideshow-button{
     letter-spacing: {{ button_letter_spacing }}px !important;
   border-radius: {{ button_border_radius }}px !important;
   }
   
   @media (max-width: 749px){
-    [data-Lumin-slideshow-section-id="{{ section.id }}"] .LuminSlideshow-button{
+    [data-clarity-slideshow-section-id="{{ section.id }}"] .claritySlideshow-button{
     letter-spacing: {{ button_letter_spacing_mobile }}px !important;
     border-radius: {{ button_border_radius_mobile }}px !important;
   }
@@ -1266,21 +1266,21 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
     
   {% comment %} ## Dots {% endcomment %}
   
-  .Lumin-slideshow-section .flickity-page-dots{
+  .clarity-slideshow-section .flickity-page-dots{
 	z-index: 1;
   }
   
   
-   .LuminSlideshow-container[data-dots-style='dots'] .flickity-page-dots{
+   .claritySlideshow-container[data-dots-style='dots'] .flickity-page-dots{
       bottom: 20px;
   }
   
-  .LuminSlideshow-container[data-dots-style='dots'] .LuminSlideshow-textbox-container--child{
+  .claritySlideshow-container[data-dots-style='dots'] .claritySlideshow-textbox-container--child{
     padding-bottom: 20px;
   }
 
 
-[data-Lumin-slideshow-section-id="{{ section.id }}"].LuminSlideshow-container[data-dots-style='dots'] .flickity-page-dots .dot.is-selected{
+[data-clarity-slideshow-section-id="{{ section.id }}"].claritySlideshow-container[data-dots-style='dots'] .flickity-page-dots .dot.is-selected{
       opacity: 1;
       background-color: white;
       width: {{ dot_size_selected }}px;
@@ -1288,7 +1288,7 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   }
 
 
-[data-Lumin-slideshow-section-id="{{ section.id }}"].LuminSlideshow-container[data-dots-style='dots'] .flickity-page-dots .dot {
+[data-clarity-slideshow-section-id="{{ section.id }}"].claritySlideshow-container[data-dots-style='dots'] .flickity-page-dots .dot {
       display: inline-block;
       vertical-align: middle;
       width: {{ dot_size }}px;
@@ -1300,16 +1300,16 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
       opacity: 0.4;
   }
 
-  [data-Lumin-slideshow-section-id="{{ section.id }}"].LuminSlideshow-container[data-dots-style='dots'] .LuminSlideshow-textbox[class*='--bottom']{
+  [data-clarity-slideshow-section-id="{{ section.id }}"].claritySlideshow-container[data-dots-style='dots'] .claritySlideshow-textbox[class*='--bottom']{
   	padding-bottom: 60px;
   }
   
-  [data-Lumin-slideshow-section-id="{{ section.id }}"].LuminSlideshow-container[data-dots-style='bars']  .flickity-page-dots{
+  [data-clarity-slideshow-section-id="{{ section.id }}"].claritySlideshow-container[data-dots-style='bars']  .flickity-page-dots{
   	bottom: 0;
     line-height: 0px;
   }
   
-  [data-Lumin-slideshow-section-id="{{ section.id }}"].LuminSlideshow-container[data-dots-style='bars'] .flickity-page-dots .dot{
+  [data-clarity-slideshow-section-id="{{ section.id }}"].claritySlideshow-container[data-dots-style='bars'] .flickity-page-dots .dot{
       position: relative;
       border-radius: 0;
       width: 120px;
@@ -1321,12 +1321,12 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
       opacity: 1;
    } 
   
-   [data-Lumin-slideshow-section-id="{{ section.id }}"].LuminSlideshow-container[data-dots-style='bars'] .flickity-page-dots .dot:not(.is-selected){
+   [data-clarity-slideshow-section-id="{{ section.id }}"].claritySlideshow-container[data-dots-style='bars'] .flickity-page-dots .dot:not(.is-selected){
       opacity: .4;
    } 
   
-   	[data-Lumin-slideshow-section-id="{{ section.id }}"].LuminSlideshow-container[data-dots-style='bars'] .flickity-page-dots .dot:before,
-  	[data-Lumin-slideshow-section-id="{{ section.id }}"].LuminSlideshow-container[data-dots-style='bars'] .flickity-page-dots .dot:after{
+   	[data-clarity-slideshow-section-id="{{ section.id }}"].claritySlideshow-container[data-dots-style='bars'] .flickity-page-dots .dot:before,
+  	[data-clarity-slideshow-section-id="{{ section.id }}"].claritySlideshow-container[data-dots-style='bars'] .flickity-page-dots .dot:after{
       content: "";
       display: block;
       position: absolute;
@@ -1336,12 +1336,12 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
       background-color: {{ dots_color }};
 	}
   
-  [data-Lumin-slideshow-section-id="{{ section.id }}"].LuminSlideshow-container[data-dots-style='bars'] .flickity-page-dots .dot:before{
+  [data-clarity-slideshow-section-id="{{ section.id }}"].claritySlideshow-container[data-dots-style='bars'] .flickity-page-dots .dot:before{
   	opacity: .4;
   }
     
 
-[data-Lumin-slideshow-section-id="{{ section.id }}"].LuminSlideshow-container[data-dots-style='bars'] .flickity-page-dots .dot.is-selected:after { 
+[data-clarity-slideshow-section-id="{{ section.id }}"].claritySlideshow-container[data-dots-style='bars'] .flickity-page-dots .dot.is-selected:after { 
   	  animation: slideRight 0s linear forwards;
       transform: translate3d(-100%, 0, 0);
       transition: none;
@@ -1351,14 +1351,14 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
 
 
   @media (max-width:749px){
- [data-Lumin-slideshow-section-id="{{ section.id }}"].LuminSlideshow-container[data-dots-style='bars'] .flickity-page-dots .dot{
+ [data-clarity-slideshow-section-id="{{ section.id }}"].claritySlideshow-container[data-dots-style='bars'] .flickity-page-dots .dot{
    width: 45px;
   } 
 }
   
   {% comment %} ## Arrows {% endcomment %}
   
-  .LuminSlideshow-arrows{
+  .claritySlideshow-arrows{
     max-width: 100%;
     width: 100%;
     display: flex;
@@ -1374,23 +1374,23 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   }
   
   {% if request.design_mode %}
-    .LuminSlideshow-arrows{
+    .claritySlideshow-arrows{
 /*    opacity: 1; */
   }
 {% endif %}
   
-  .LuminSlideshow-arrows *{
+  .claritySlideshow-arrows *{
   	pointer-events: auto;
   }
   
-  .LuminSlideshow-next{
+  .claritySlideshow-next{
   	margin-right: 30px;
   }
-    .LuminSlideshow-prev{
+    .claritySlideshow-prev{
   	margin-left: 30px;
   }
 
-  .LuminSlideshow-arrows button{
+  .claritySlideshow-arrows button{
     {% if arrow_background_color != 'rgba(0,0,0,0)' %}
       box-shadow: rgb(0 0 0 / 10%) 0px 5px 5px;
     {% endif %}
@@ -1399,11 +1399,11 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
       height: {{ arrow_size }}px;
   }
   
-  .LuminSlideshow-prev{
+  .claritySlideshow-prev{
   left: 0;
   }
   
-  .LuminSlideshow-arrows button svg{
+  .claritySlideshow-arrows button svg{
     width: {{ arrow_chevron_size }}px !important;
       height: {{ arrow_chevron_size }}px !important;
       left: 50% !important;
@@ -1413,20 +1413,20 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   }
   
   @media (max-width: 767px){
-    .LuminSlideshow-arrows button{
+    .claritySlideshow-arrows button{
     width: {{ arrow_size_mobile }}px;
       height: {{ arrow_size_mobile }}px;
   }
     
-      .LuminSlideshow-arrows button svg{
+      .claritySlideshow-arrows button svg{
     width: {{ arrow_chevron_size_mobile }}px !important;
       height: {{ arrow_chevron_size_mobile }}px !important;
   }
   }
   
-     .LuminSlideshow-arrows button:hover,
-   .LuminSlideshow-arrows button:focus,
-  .LuminSlideshow-arrows button:active{
+     .claritySlideshow-arrows button:hover,
+   .claritySlideshow-arrows button:focus,
+  .claritySlideshow-arrows button:active{
         
     {% if arrow_background_color != 'rgba(0,0,0,0)' %}
       box-shadow: rgb(0 0 0 / 10%) 0px 5px 5px !important;
@@ -1436,19 +1436,19 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
 
   }
   
-  .LuminSlideshow-container .flickity-button:focus{
+  .claritySlideshow-container .flickity-button:focus{
   	    {% if arrow_background_color != 'rgba(0,0,0,0)' %}
       box-shadow: rgb(0 0 0 / 10%) 0px 5px 5px !important;
     {% endif %}
   }
 
 
-  .LuminSlideshow-arrows .LuminSlideshow-prev{
+  .claritySlideshow-arrows .claritySlideshow-prev{
     margin-right: calc({{ arrow_size }}px + 45px) !important;
   }
  
 
-  .Lumin-slideshow-section--loaded .LuminSlideshow-arrows{
+  .clarity-slideshow-section--loaded .claritySlideshow-arrows{
     animation: fade-in .8s ease 0s forwards;
     animation-delay: .2s;
   }
@@ -1456,21 +1456,21 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   
 
   
-    [data-arrows-style-mobile="side"] + .LuminSlideshow-arrows,
-  [data-arrows-style="side"] + .LuminSlideshow-arrows{
+    [data-arrows-style-mobile="side"] + .claritySlideshow-arrows,
+  [data-arrows-style="side"] + .claritySlideshow-arrows{
         top: 50%;
     	transform: translateY(-50%);
 /*       pointer-events: none; */
   }
   
-  [data-arrows-style-mobile="side"] + .LuminSlideshow-arrows button,    
-  [data-arrows-style="side"] + .LuminSlideshow-arrows button{
+  [data-arrows-style-mobile="side"] + .claritySlideshow-arrows button,    
+  [data-arrows-style="side"] + .claritySlideshow-arrows button{
       pointer-events: auto;
   }
   
   @media (min-width: 768px){
     
-    [data-arrows-style="bottom"] + .LuminSlideshow-arrows{
+    [data-arrows-style="bottom"] + .claritySlideshow-arrows{
         top: unset !important;
     transform: unset !important;
       bottom: -16px;
@@ -1478,34 +1478,34 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
       right: -40px;
     }
     
-  [data-arrows-style="bottom"] + .LuminSlideshow-arrows button{
+  [data-arrows-style="bottom"] + .claritySlideshow-arrows button{
     top: unset !important;
     transform: unset !important;
   }
     
     
-    [data-arrows-style="none"] + .LuminSlideshow-arrows{
+    [data-arrows-style="none"] + .claritySlideshow-arrows{
     	display: none;
     }
     
   }
   
   @media (max-width: 767px){
-    [data-arrows-style="bottom"] + .LuminSlideshow-arrows{
+    [data-arrows-style="bottom"] + .claritySlideshow-arrows{
 /*       display: none; */
     }
     
-    [data-arrows-style-mobile="side"] + .LuminSlideshow-arrows{
+    [data-arrows-style-mobile="side"] + .claritySlideshow-arrows{
     	display: block;
     }
     
-    [data-arrows-style-mobile="side"] + .LuminSlideshow-arrows{
+    [data-arrows-style-mobile="side"] + .claritySlideshow-arrows{
         top: 50%;
     	transform: translateY(-50%);
         pointer-events: none;
   	}
     
-    [data-arrows-style-mobile="none"] + .LuminSlideshow-arrows{
+    [data-arrows-style-mobile="none"] + .claritySlideshow-arrows{
     	display: none;
     }
   
@@ -1515,8 +1515,8 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   {% comment %} ## Remove all dots and arrows if only 1 slide {% endcomment %}
   
   
-   .Lumin-slideshow-section [data-slides-quantity='1'] + * .flickity-page-dots,   
-  .Lumin-slideshow-section [data-slides-quantity='1'] + * + .LuminSlideshow-arrows{
+   .clarity-slideshow-section [data-slides-quantity='1'] + * .flickity-page-dots,   
+  .clarity-slideshow-section [data-slides-quantity='1'] + * + .claritySlideshow-arrows{
   	display: none !important;
   }
 
@@ -1577,7 +1577,7 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
   }
 }
   
-/* [class*='Lumin'] .flickity-viewport{
+/* [class*='clarity'] .flickity-viewport{
     height: 1013px !important;
 }
    */
@@ -1588,20 +1588,20 @@ If an image has a height of 200px and the other one of 800px, the slider adapts 
 
 
 
-<script  data-Lumin-slideshow-script>var sectionID;
+<script  data-clarity-slideshow-script>var sectionID;
 
 try {
-  sectionID = document.currentScript.parentNode.querySelector(`[data-Lumin-slideshow-section-id]`).getAttribute(`data-Lumin-slideshow-section-id`);
+  sectionID = document.currentScript.parentNode.querySelector(`[data-clarity-slideshow-section-id]`).getAttribute(`data-clarity-slideshow-section-id`);
 } catch (err) {
   sectionID = `{{ section.id }}`.trim();
 }
 
 
-var slideshowID = `LuminSlideshowPro${sectionID}`;
+var slideshowID = `claritySlideshowPro${sectionID}`;
 var flickitySlider = `slideshow-${sectionID}`;
 
-window.LuminTempSectionID = sectionID;
-window.LuminTempSlideshowID = slideshowID;
+window.clarityTempSectionID = sectionID;
+window.clarityTempSlideshowID = slideshowID;
 
 
 window[slideshowID] = window[slideshowID] || {};
@@ -1610,12 +1610,12 @@ window[slideshowID] = (function() {
 
 
 
-  const sectionID = window.LuminTempSectionID;
-  const slideshowID = window.LuminTempSlideshowID;
+  const sectionID = window.clarityTempSectionID;
+  const slideshowID = window.clarityTempSlideshowID;
   const flickitySlider = window.flickitySlider;
 
-  const $this = document.querySelector(`.LuminSlideshow-container[data-Lumin-slideshow-section-id*='${sectionID}']`);
-  const $thisSection = $this.closest(`.Lumin-slideshow-section`);
+  const $this = document.querySelector(`.claritySlideshow-container[data-clarity-slideshow-section-id*='${sectionID}']`);
+  const $thisSection = $this.closest(`.clarity-slideshow-section`);
 
   
 
@@ -1646,7 +1646,7 @@ window[slideshowID] = (function() {
       "imagesLoaded": true,
       fade: options.fade,
       adaptiveHeight: false,
-      cellSelector: '.LuminSlideshow-cell',
+      cellSelector: '.claritySlideshow-cell',
       wrapAround: true,
       prevNextButtons: false,
       lazyLoad: true,
@@ -1664,11 +1664,11 @@ window[slideshowID] = (function() {
   let sliderOptions = loadSliderOptions();
   const lazyLoadOptions = {
 
-    'elements_selector': '.LuminSlideshow-image--lazy,.LuminSlideshow-parallax--lazy',
-    "class_applied": "LuminSlideshow--lazy-applied",
-    "class_loaded": "LuminSlideshow--lazy-loaded",
-    "class_loading": "LuminSlideshow--lazy-loading",
-    "class_entered": "LuminSlideshow--lazy-entered"
+    'elements_selector': '.claritySlideshow-image--lazy,.claritySlideshow-parallax--lazy',
+    "class_applied": "claritySlideshow--lazy-applied",
+    "class_loaded": "claritySlideshow--lazy-loaded",
+    "class_loading": "claritySlideshow--lazy-loading",
+    "class_entered": "claritySlideshow--lazy-entered"
   }
 
   
@@ -1710,7 +1710,7 @@ window[slideshowID] = (function() {
   function _getAttributeOption(dataAttribute) {
 
 
-    const element = document.querySelector(`.LuminSlideshowOptions[data-Lumin-slideshow-section-id*='${sectionID}']`);
+    const element = document.querySelector(`.claritySlideshowOptions[data-clarity-slideshow-section-id*='${sectionID}']`);
 
 
     if (!element) {
@@ -1860,7 +1860,7 @@ window[slideshowID] = (function() {
 
     function loadFlickity() {
 
-        if (window.hasOwnProperty("LuminSlideshowLibrary")) {
+        if (window.hasOwnProperty("claritySlideshowLibrary")) {
             return true;
         }
       
@@ -1876,7 +1876,7 @@ window[slideshowID] = (function() {
   			
   			await loadFlickityFade();
             
-            window['LuminSlideshowLibrary'] = true;
+            window['claritySlideshowLibrary'] = true;
 
             resolve(true);
 
@@ -1922,7 +1922,7 @@ window[slideshowID] = (function() {
     const id = $id.getAttribute(`data-slideshow-section-id`);
 
 
-    const $slider = document.querySelector(`.LuminSlideshow-container--${id}`); /* `*/
+    const $slider = document.querySelector(`.claritySlideshow-container--${id}`); /* `*/
 
 
     if (!$slider) {
@@ -1933,13 +1933,13 @@ window[slideshowID] = (function() {
     function parallax() {
 
 
-      const $parent = $slider.closest(".Lumin-slideshow-section");
+      const $parent = $slider.closest(".clarity-slideshow-section");
 
       var offset = $parent.getBoundingClientRect().top;
       var _scrolled = window.scrollY - (window.scrollY + offset);
       var scrolled = _isMobile() ? _scrolled : _scrolled;
 
-      var parallax = $slider.querySelectorAll(`.LuminSlideshow-cell.is-selected ${_isMobile() ? `.Parallax-parent--mobile` : `.Parallax-parent--desktop`} .LuminSlideshow-parallax`);
+      var parallax = $slider.querySelectorAll(`.claritySlideshow-cell.is-selected ${_isMobile() ? `.Parallax-parent--mobile` : `.Parallax-parent--desktop`} .claritySlideshow-parallax`);
 
       var zoom = _isMobile() ? PARALLAX_ZOOM_MOBILE : PARALLAX_ZOOM;
       var speed = _isMobile() ? PARALLAX_SPEED_MOBILE : PARALLAX_SPEED;
@@ -1967,7 +1967,7 @@ window[slideshowID] = (function() {
         ready: async function() {
 
 
-          const $section = $slider.closest(`.Lumin-slideshow-section`);
+          const $section = $slider.closest(`.clarity-slideshow-section`);
 
 
           window[`LazyLoad--${sectionID}`].update();
@@ -1975,7 +1975,7 @@ window[slideshowID] = (function() {
           
           let $image;
           if (!options.parallax) {
-            $image = $this.querySelector(`.LuminSlideshow-cell:nth-child(1) .LuminSlideshow-image:last-of-type`);
+            $image = $this.querySelector(`.claritySlideshow-cell:nth-child(1) .claritySlideshow-image:last-of-type`);
           }
 
 
@@ -2079,7 +2079,7 @@ window[slideshowID] = (function() {
   async function checkIfSelectedImageHasLoaded() {
 
     return new Promise(async (resolve, reject) => {
-      const $image = await _waitForElement(`.LuminSlideshow-container[data-Lumin-slideshow-section-id*='${sectionID}'] .is-selected .LuminSlideshow--lazy-loaded`); 
+      const $image = await _waitForElement(`.claritySlideshow-container[data-clarity-slideshow-section-id*='${sectionID}'] .is-selected .claritySlideshow--lazy-loaded`); 
 
       if ($image) {
         resolve(true);
@@ -2099,34 +2099,34 @@ window[slideshowID] = (function() {
 
     const id = $id.getAttribute(`data-slideshow-section-id`);
 
-    const $slider = document.querySelector(`.LuminSlideshow-container--${id}`);
+    const $slider = document.querySelector(`.claritySlideshow-container--${id}`);
 
     if (!$slider) {
       return;
     }
 
-    const $section = $slider.closest(`.Lumin-slideshow-section`);
+    const $section = $slider.closest(`.clarity-slideshow-section`);
 
     if (!$section) {
       return;
     }
 
-    if ($slider.classList.contains("LuminSlideshow-container--loaded") ||
-      $section.classList.contains("Lumin-slideshow-section--loaded")) {
+    if ($slider.classList.contains("claritySlideshow-container--loaded") ||
+      $section.classList.contains("clarity-slideshow-section--loaded")) {
       return;
     }
 
-    $slider.classList.add("LuminSlideshow-container--loaded");
-    $section.classList.add("Lumin-slideshow-section--loaded");
+    $slider.classList.add("claritySlideshow-container--loaded");
+    $section.classList.add("clarity-slideshow-section--loaded");
   }
 
   function removeLoaderForCustomizePage($slider) {
 
-    if ($slider.classList.contains("LuminSlideshow-container--loaded")) {
+    if ($slider.classList.contains("claritySlideshow-container--loaded")) {
       return;
     }
 
-    $slider.classList.add("LuminSlideshow-container--loaded");
+    $slider.classList.add("claritySlideshow-container--loaded");
   }
 
 
@@ -2144,7 +2144,7 @@ window[slideshowID] = (function() {
       }
 
 
-      let selector = _isMobile() ? 'LuminSlideshow-parallax--mobile' : 'LuminSlideshow-parallax--desktop';
+      let selector = _isMobile() ? 'claritySlideshow-parallax--mobile' : 'claritySlideshow-parallax--desktop';
 
       const $parallax = e.target;
 
@@ -2185,8 +2185,8 @@ window[slideshowID] = (function() {
   }
 
   function handleArrows() {
-    const $prev = $thisSection.querySelector(`.LuminSlideshow-prev`);
-    const $next = $thisSection.querySelector(`.LuminSlideshow-next`);
+    const $prev = $thisSection.querySelector(`.claritySlideshow-prev`);
+    const $next = $thisSection.querySelector(`.claritySlideshow-next`);
 
 
     if (!$prev || !$next) {
@@ -2269,7 +2269,7 @@ window[slideshowID] = (function() {
     }
 
 
-    const $slide = $slider.querySelector(`.LuminSlideshow-cell.is-selected`);
+    const $slide = $slider.querySelector(`.claritySlideshow-cell.is-selected`);
 
     if (!$slide) {
       return;
@@ -2290,9 +2290,9 @@ window[slideshowID] = (function() {
       aspectRatio = Number($slide.querySelector(`[data-image-aspect-ratio-mobile]`).getAttribute("data-image-aspect-ratio-mobile"));
       _addStyle(`
 
-[data-Lumin-slideshow-section-id="${sectionID}"].LuminSlideshow-container,
-              [data-Lumin-slideshow-section-id="${sectionID}"] .LuminSlideshow-container, 
-              [data-Lumin-slideshow-section-id="${sectionID}"] .LuminSlideshow-parallax{
+[data-clarity-slideshow-section-id="${sectionID}"].claritySlideshow-container,
+              [data-clarity-slideshow-section-id="${sectionID}"] .claritySlideshow-container, 
+              [data-clarity-slideshow-section-id="${sectionID}"] .claritySlideshow-parallax{
 padding-bottom: calc(100% / ${aspectRatio}) !important;
 }
 `);
@@ -2300,7 +2300,7 @@ padding-bottom: calc(100% / ${aspectRatio}) !important;
       const height = parseInt(window.innerWidth) / Number(aspectRatio);
 
 
-      const $text = $slide.querySelector(`.LuminSlideshow-textbox-container--parent`);
+      const $text = $slide.querySelector(`.claritySlideshow-textbox-container--parent`);
 
       if ($text) {
         $text.setAttribute("style", `height:${height}px;`);
@@ -2312,10 +2312,10 @@ padding-bottom: calc(100% / ${aspectRatio}) !important;
       aspectRatio = Number($slide.querySelector(`[data-image-aspect-ratio]`).getAttribute("data-image-aspect-ratio"));
 
       _addStyle(`
-[data-Lumin-slideshow-section-id="${sectionID}"] .LuminSlideshow-textbox-container--parent,
-[data-Lumin-slideshow-section-id="${sectionID}"].LuminSlideshow-container,
-              [data-Lumin-slideshow-section-id="${sectionID}"] .LuminSlideshow-container, 
-              [data-Lumin-slideshow-section-id="${sectionID}"] .LuminSlideshow-parallax{
+[data-clarity-slideshow-section-id="${sectionID}"] .claritySlideshow-textbox-container--parent,
+[data-clarity-slideshow-section-id="${sectionID}"].claritySlideshow-container,
+              [data-clarity-slideshow-section-id="${sectionID}"] .claritySlideshow-container, 
+              [data-clarity-slideshow-section-id="${sectionID}"] .claritySlideshow-parallax{
 padding-bottom: calc(100% / ${aspectRatio}) !important;
 }
 `);
@@ -2346,13 +2346,13 @@ padding-bottom: calc(100% / ${aspectRatio}) !important;
 
     function parallax() {
 
-      const $parent = $slider.closest(".Lumin-slideshow-section");
+      const $parent = $slider.closest(".clarity-slideshow-section");
 
       var offset = $parent.getBoundingClientRect().top;
       var _scrolled = window.scrollY - (window.scrollY + offset);
       var scrolled = _isMobile() ? _scrolled : _scrolled;
 
-      var parallax = $slider.querySelectorAll(`.LuminSlideshow-cell.is-selected ${_isMobile() ? `.Parallax-parent--mobile` : `.Parallax-parent--desktop`} .LuminSlideshow-parallax`);
+      var parallax = $slider.querySelectorAll(`.claritySlideshow-cell.is-selected ${_isMobile() ? `.Parallax-parent--mobile` : `.Parallax-parent--desktop`} .claritySlideshow-parallax`);
 
       var zoom = _isMobile() ? PARALLAX_ZOOM_MOBILE : PARALLAX_ZOOM;
       var speed = _isMobile() ? PARALLAX_SPEED_MOBILE : PARALLAX_SPEED;
@@ -2383,11 +2383,11 @@ padding-bottom: calc(100% / ${aspectRatio}) !important;
   function initVanillaLazyLoad() {
     window[`LazyLoad--${sectionID}`] = new LazyLoad({
 
-      'elements_selector': '.is-selected .LuminSlideshow-image--lazy,.is-selected .LuminSlideshow-parallax--lazy',
-      "class_applied": "LuminSlideshow--lazy-applied",
-      "class_loaded": "LuminSlideshow--lazy-loaded",
-      "class_loading": "LuminSlideshow--lazy-loading",
-      "class_entered": "LuminSlideshow--lazy-entered",
+      'elements_selector': '.is-selected .claritySlideshow-image--lazy,.is-selected .claritySlideshow-parallax--lazy',
+      "class_applied": "claritySlideshow--lazy-applied",
+      "class_loaded": "claritySlideshow--lazy-loaded",
+      "class_loading": "claritySlideshow--lazy-loading",
+      "class_entered": "claritySlideshow--lazy-entered",
       "threshold": 50
     });
 
@@ -2437,7 +2437,7 @@ padding-bottom: calc(100% / ${aspectRatio}) !important;
 
 
 
-    var $sliders = document.querySelectorAll(`[class*='LuminSlideshow-container--'][data-Lumin-slideshow-section-id]`);
+    var $sliders = document.querySelectorAll(`[class*='claritySlideshow-container--'][data-clarity-slideshow-section-id]`);
 
 
     for (var each of $sliders) {
@@ -2466,11 +2466,11 @@ padding-bottom: calc(100% / ${aspectRatio}) !important;
 
         var myLazyLoad = new LazyLoad({
 
-          'elements_selector': '.LuminSlideshow-image--lazy,.LuminSlideshow-parallax--lazy',
-          "class_applied": "LuminSlideshow--lazy-applied",
-          "class_loaded": "LuminSlideshow--lazy-loaded",
-          "class_loading": "LuminSlideshow--lazy-loading",
-          "class_entered": "LuminSlideshow--lazy-entered"
+          'elements_selector': '.claritySlideshow-image--lazy,.claritySlideshow-parallax--lazy',
+          "class_applied": "claritySlideshow--lazy-applied",
+          "class_loaded": "claritySlideshow--lazy-loaded",
+          "class_loading": "claritySlideshow--lazy-loading",
+          "class_entered": "claritySlideshow--lazy-entered"
         });
 
         myLazyLoad.loadAll();
@@ -2547,8 +2547,8 @@ window[slideshowID].init();</script>
 
 {% schema %}
  {
-  "name": "Lumin Slideshow Pro",
-  "class": "Lumin-slideshow-section",
+  "name": "clarity Slideshow Pro",
+  "class": "clarity-slideshow-section",
    "disabled_on": {
   "groups": ["header", "footer", "custom.popup"]
    },
@@ -3268,30 +3268,30 @@ window[slideshowID].init();</script>
           "type": "select",
           "id": "text_align",
           "label": "Text alignment",
-          "default": "LuminSlideshow-textbox--center",
+          "default": "claritySlideshow-textbox--center",
           "options": [
             {
-              "value": "LuminSlideshow-textbox--center-left",
+              "value": "claritySlideshow-textbox--center-left",
               "label": "Center left"
             },
             {
-              "value": "LuminSlideshow-textbox--center",
+              "value": "claritySlideshow-textbox--center",
               "label": "Center"
             },
             {
-              "value": "LuminSlideshow-textbox--center-right",
+              "value": "claritySlideshow-textbox--center-right",
               "label": "Center right"
             },
             {
-              "value": "LuminSlideshow-textbox--bottom-left",
+              "value": "claritySlideshow-textbox--bottom-left",
               "label": "Bottom left"
             },
             {
-              "value": "LuminSlideshow-textbox--bottom-center",
+              "value": "claritySlideshow-textbox--bottom-center",
               "label": "Bottom center"
             },
             {
-              "value": "LuminSlideshow-textbox--bottom-right",
+              "value": "claritySlideshow-textbox--bottom-right",
               "label": "Bottom right"
             }
           ]
@@ -3301,8 +3301,8 @@ window[slideshowID].init();</script>
   ],
   "presets": [
     {
-      "name": "Lumin Slideshow Pro",
-      "category": "Lumin Section",
+      "name": "clarity Slideshow Pro",
+      "category": "clarity Section",
       "settings": {
         "autoplay": true,
         "autoplay_speed": 5

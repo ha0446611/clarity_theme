@@ -61,7 +61,7 @@
                   }
                 }
 
-                 .lumin-text-container-{{ block.id }} {
+                 .clarity-text-container-{{ block.id }} {
                     margin: 0;
                     display: flex;
                     width: 100%;
@@ -75,7 +75,7 @@
                     align-items: center;
                     justify-content: flex-start;
                   }
-                .lumin-text-container-{{ block.id }}:before {
+                .clarity-text-container-{{ block.id }}:before {
                     content: "";
                     width: 100%;
                     height: 100%;
@@ -137,11 +137,11 @@
                     justify-content: flex-end;
                   }
 
-                  .lumin-text-{{ block.id }} {
+                  .clarity-text-{{ block.id }} {
                     text-align: {{block.settings.desktop_content_alignment}};
                     position:relative;
                   }
-                 .lumin-text-{{ block.id }}:before {
+                 .clarity-text-{{ block.id }}:before {
                     content: "";
                     position: absolute;
                     z-index: -1;
@@ -157,7 +157,7 @@
                     transform: translate(-50%,-50%);
                   }
 
-                  /*  .lumin-text-{{ block.id }}:after {
+                  /*  .clarity-text-{{ block.id }}:after {
                     content:"";
                     width: 100%;
                     height:100%;
@@ -169,28 +169,28 @@
                     left: 0;
                   }*/
 
-                  .lumin-text-{{ block.id }} h2 {
+                  .clarity-text-{{ block.id }} h2 {
                     color: {{ block.settings.head_color }};
                     font-size: {{ block.settings.head_size_d }}px;
                     margin:0;line-height:1.2;
                     margin-bottom: {{block.settings.margin_bottom}}px;
                   }
                 @media screen and (max-width: 749px) {
-                   .lumin-text-{{ block.id }} h2 {
+                   .clarity-text-{{ block.id }} h2 {
                     font-size: {{ block.settings.head_size_m }}px;
                   }
                 }
-                  .lumin-text-{{ block.id }} p {
+                  .clarity-text-{{ block.id }} p {
                     color: {{ block.settings.text_color }};
                     font-size: {{ block.settings.text_size_d }}px;
                     margin:0;line-height: 1.2;
                   }
                 @media screen and (max-width: 749px) {
-                   .lumin-text-{{ block.id }} p {
+                   .clarity-text-{{ block.id }} p {
                     font-size: {{ block.settings.text_size_m }}px;
                   }
                 }
-                .lumin-image-{{ block.id }} img {
+                .clarity-image-{{ block.id }} img {
                   object-fit:cover;
                   height: 100%;
                   width: 100%;
@@ -198,7 +198,7 @@
                 }
               </style>
               <div
-                class="column-{{ block.id }} lumin-image-{{ block.id }} lumin-image-{{ section.id }}{% if block.settings.small_hide %} small-hide{% endif %}{% if block.settings.medium_hide %} medium-hide{% endif %}{% if block.settings.large_up_hide %} large-up-hide{% endif %}"
+                class="column-{{ block.id }} clarity-image-{{ block.id }} clarity-image-{{ section.id }}{% if block.settings.small_hide %} small-hide{% endif %}{% if block.settings.medium_hide %} medium-hide{% endif %}{% if block.settings.large_up_hide %} large-up-hide{% endif %}"
                 {{ block.shopify_attributes }}
               >
                 {% if block.settings['grid-url'] != blank %}
@@ -212,12 +212,12 @@
                     wrapper_class: "image-wrapper"
                   %}
             {%- else -%}
-              {% render 'lumin-placeholder' %}
+              {% render 'clarity-placeholder' %}
             {%- endif -%}
                 
-                <div class="lumin-text-container-{{ block.id }} image-text-content-{{ block.id }}--{{ block.settings.image_content_position }} ">
+                <div class="clarity-text-container-{{ block.id }} image-text-content-{{ block.id }}--{{ block.settings.image_content_position }} ">
                   <div
-                    class="lumin-text-{{ block.id }}"
+                    class="clarity-text-{{ block.id }}"
                     style="
                       background: {{ block.settings.bg_color }};
                       padding: {{block.settings.padding_size_in}}px;
@@ -227,18 +227,18 @@
                     <h2>
                       {{
                         block.settings.head
-                        | replace: '[', '<span class="lumin-text__fancy1">'
+                        | replace: '[', '<span class="clarity-text__fancy1">'
                         | replace: ']', '</span>'
-                        | replace: '((', '<span class="lumin-text__fancy2">'
+                        | replace: '((', '<span class="clarity-text__fancy2">'
                         | replace: '))', '</span>'
                       }}
                     </h2>
                     <p>
                       {{
                         block.settings.text
-                        | replace: '[', '<span class="lumin-text__fancy1">'
+                        | replace: '[', '<span class="clarity-text__fancy1">'
                         | replace: ']', '</span>'
-                        | replace: '((', '<span class="lumin-text__fancy2">'
+                        | replace: '((', '<span class="clarity-text__fancy2">'
                         | replace: '))', '</span>'
                       }}
                     </p>
@@ -276,7 +276,7 @@
                      width: calc({{ block.settings.grid_width_tablet}}% - {{ section.settings.grid_gap }}px);
                    }
                  }
-                  .lumin-text-container-{{ block.id }} {
+                  .clarity-text-container-{{ block.id }} {
                     margin: 0;
                     display: flex;
                     width: 100%;
@@ -290,7 +290,7 @@
                     align-items: center;
                     justify-content: flex-start;
                   }
-                .lumin-text-container-{{ block.id }}:before {
+                .clarity-text-container-{{ block.id }}:before {
                     content: "";
                     width: 100%;
                     height: 100%;
@@ -352,11 +352,11 @@
                     justify-content: flex-end;
                   }
 
-                  .lumin-text-{{ block.id }} {
+                  .clarity-text-{{ block.id }} {
                     text-align: {{block.settings.desktop_content_alignment}};
                     position:relative;
                   }
-                 .lumin-text-{{ block.id }}:before {
+                 .clarity-text-{{ block.id }}:before {
                     content: "";
                     position: absolute;
                     z-index: -1;
@@ -373,23 +373,23 @@
                   }
 
 
-                   .lumin-text-{{ block.id }} h2 {
+                   .clarity-text-{{ block.id }} h2 {
                      color: {{ block.settings.head_color }};
                      font-size: {{ block.settings.head_size_d }}px;
                      margin:0;line-height:1.2;
                    }
                  @media screen and (max-width: 749px) {
-                    .lumin-text-{{ block.id }} h2 {
+                    .clarity-text-{{ block.id }} h2 {
                      font-size: {{ block.settings.head_size_m }}px;
                    }
                  }
-                   .lumin-text-{{ block.id }} p {
+                   .clarity-text-{{ block.id }} p {
                      color: {{ block.settings.text_color }};
                      font-size: {{ block.settings.text_size_d }}px;
                      margin:0;line-height: 1.2;
                    }
                  @media screen and (max-width: 749px) {
-                    .lumin-text-{{ block.id }} p {
+                    .clarity-text-{{ block.id }} p {
                      font-size: {{ block.settings.text_size_m }}px;
                    }
                  }
@@ -408,7 +408,7 @@
                  }
               </style>
               <div
-                class="video-container-{{ section.id }} video-padding-{{ block.id }} column-{{ block.id }} lumin-image-{{ section.id }}{% if block.settings.small_hide %} small-hide{% endif %}{% if block.settings.medium_hide %} medium-hide{% endif %}{% if block.settings.large_up_hide %} large-up-hide{% endif %}"
+                class="video-container-{{ section.id }} video-padding-{{ block.id }} column-{{ block.id }} clarity-image-{{ section.id }}{% if block.settings.small_hide %} small-hide{% endif %}{% if block.settings.medium_hide %} medium-hide{% endif %}{% if block.settings.large_up_hide %} large-up-hide{% endif %}"
                 {{ block.shopify_attributes }}
               >
                 {% if block.settings['grid-url'] != blank %}
@@ -417,7 +417,7 @@
                 {%- if block.settings.video == blank -%}
                   <div class="video-media-grid video-playsinline" style="background: #f2f2f2;display: block;"></div>
                   <span class="deferred-media__poster-button motion-reduce" style="z-index:3;">
-                      {%- render 'lumin-play-icon' -%}
+                      {%- render 'clarity-play-icon' -%}
                     </span>
                  
                 {%- else -%}
@@ -434,9 +434,9 @@
                       class: 'video-media-grid'
                   }}
                 {%- endif -%}
-                <div class="lumin-text-container-{{ block.id }} image-text-content-{{ block.id }}--{{ block.settings.image_content_position }} ">
+                <div class="clarity-text-container-{{ block.id }} image-text-content-{{ block.id }}--{{ block.settings.image_content_position }} ">
                   <div
-                    class="lumin-text-{{ block.id }}"
+                    class="clarity-text-{{ block.id }}"
                     style="
                       background: {{ block.settings.bg_color }};
                       padding: {{block.settings.padding_size_in}}px;
@@ -446,18 +446,18 @@
                     <h2>
                       {{
                         block.settings.head
-                        | replace: '[', '<span class="lumin-text__fancy1">'
+                        | replace: '[', '<span class="clarity-text__fancy1">'
                         | replace: ']', '</span>'
-                        | replace: '((', '<span class="lumin-text__fancy2">'
+                        | replace: '((', '<span class="clarity-text__fancy2">'
                         | replace: '))', '</span>'
                       }}
                     </h2>
                     <p>
                       {{
                         block.settings.text
-                        | replace: '[', '<span class="lumin-text__fancy1">'
+                        | replace: '[', '<span class="clarity-text__fancy1">'
                         | replace: ']', '</span>'
-                        | replace: '((', '<span class="lumin-text__fancy2">'
+                        | replace: '((', '<span class="clarity-text__fancy2">'
                         | replace: '))', '</span>'
                       }}
                     </p>
@@ -504,7 +504,7 @@
                    }
                  }
 
-                 .lumin-text-container-{{ block.id }} {
+                 .clarity-text-container-{{ block.id }} {
                     margin: 0;
                     background: {{ block.settings.bg_color }};
                     display: flex;
@@ -526,7 +526,7 @@
                   }
 
                   @media screen and (max-width: 600px) {
-                    .lumin-text-container-{{ block.id }} {
+                    .clarity-text-container-{{ block.id }} {
                     position: relative;
                     padding: {{block.settings.padding_size_mobile}}px {{block.settings.padding_left_mobile}}px;
                     }
@@ -577,52 +577,52 @@
                     justify-content: flex-end;
                   }
 
-                  .lumin-text-{{ block.id }} {
+                  .clarity-text-{{ block.id }} {
                     background: {{ block.settings.bg_color }};
                     text-align: {{block.settings.desktop_content_alignment}};
                     color: {{ block.settings.text_color }};
                   }
-                 .lumin-head-{{ block.id }} img {
+                 .clarity-head-{{ block.id }} img {
                       width: {{block.settings.icon_size}}% !important;
                       height: auto;
                       border-radius: {{block.settings.icon_corner}}%;
                   }
 
-                  .lumin-head-{{ block.id }} svg {
+                  .clarity-head-{{ block.id }} svg {
                       width: {{block.settings.icon_size}}% !important;
                       height: auto;
                       border-radius: {{block.settings.icon_corner}}%;
                       background: #f2f2f2;
                   }
 
-                  .lumin-head-{{ block.id }} h2 {
+                  .clarity-head-{{ block.id }} h2 {
                     color: {{ block.settings.head_color }};
                     {% if block.settings.use_body_font %}font-family: var(--font-body-family);{% endif %}
                     font-size: {{ block.settings.head_size_d }}px;
                     margin:0;
                   }
                 @media screen and (max-width: 749px) {
-                   .lumin-head-{{ block.id }} h2 {
+                   .clarity-head-{{ block.id }} h2 {
                     font-size: {{ block.settings.head_size_m }}px;
                   }
                 }
-                  .lumin-text-{{ block.id }} p {
+                  .clarity-text-{{ block.id }} p {
                     color: {{ block.settings.text_color }};
                     font-size: {{ block.settings.text_size_d }}px;
                     margin:0;
                   }
                 @media screen and (max-width: 749px) {
-                   .lumin-text-{{ block.id }} p {
+                   .clarity-text-{{ block.id }} p {
                     font-size: {{ block.settings.text_size_m }}px;
                   }
                 }
               </style>
               <div
-                class="column-{{ block.id }} lumin-text-{{ section.id }}{% if block.settings.small_hide %} small-hide{% endif %}{% if block.settings.medium_hide %} medium-hide{% endif %}{% if block.settings.large_up_hide %} large-up-hide{% endif %}"
+                class="column-{{ block.id }} clarity-text-{{ section.id }}{% if block.settings.small_hide %} small-hide{% endif %}{% if block.settings.medium_hide %} medium-hide{% endif %}{% if block.settings.large_up_hide %} large-up-hide{% endif %}"
                 {{ block.shopify_attributes }}
               >
-                <div class="lumin-text-container-{{ block.id }} image-text-content-{{ block.id }}--{{ block.settings.image_content_position }}">
-                  <div class="lumin-head-{{ block.id }}">
+                <div class="clarity-text-container-{{ block.id }} image-text-content-{{ block.id }}--{{ block.settings.image_content_position }}">
+                  <div class="clarity-head-{{ block.id }}">
                     {%- if block.settings.icon != blank -%}
                       <img src="{{ block.settings.icon | img_url: '500x' }}">
                     {%- endif -%}
@@ -637,27 +637,27 @@
                       >
                         {% if block.settings.head != blank %}
                           <div
-                            class="lumin-text-{{ block.id }}"
+                            class="clarity-text-{{ block.id }}"
                             style=" margin-top:0; margin-bottom: {{ block.settings.margin_bottom }}px;"
                           >
                             <h2>
                               {{
                                 block.settings.head
-                                | replace: '[', '<span class="lumin-text__fancy1">'
+                                | replace: '[', '<span class="clarity-text__fancy1">'
                                 | replace: ']', '</span>'
-                                | replace: '((', '<span class="lumin-text__fancy2">'
+                                | replace: '((', '<span class="clarity-text__fancy2">'
                                 | replace: '))', '</span>'
                               }}
                             </h2>
                           </div>
                         {% endif %}
                         {% if block.settings.subtitle != blank %}
-                          <div class="lumin-text-{{ block.id }} rte">
+                          <div class="clarity-text-{{ block.id }} rte">
                             {{
                               block.settings.subtitle
-                              | replace: '[', '<span class="lumin-text__fancy1">'
+                              | replace: '[', '<span class="clarity-text__fancy1">'
                               | replace: ']', '</span>'
-                              | replace: '((', '<span class="lumin-text__fancy2">'
+                              | replace: '((', '<span class="clarity-text__fancy2">'
                               | replace: '))', '</span>'
                             }}
                           </div>
@@ -707,7 +707,7 @@
                    }
                  }
 
-                 .lumin-text-container-{{ block.id }} {
+                 .clarity-text-container-{{ block.id }} {
                     margin: 0;
                     background: {{ block.settings.bg_color }};
                     position: relative;
@@ -715,7 +715,7 @@
                     overflow: hidden;
                   }
 
-                 .lumin-text-container-{{ block.id }}:before {
+                 .clarity-text-container-{{ block.id }}:before {
                     content:"";
                     position: absolute;
                     width: 100%;
@@ -725,27 +725,27 @@
                   }
 
                   @media screen and (max-width: 600px) {
-                   .lumin-text-container-{{ block.id }} {
+                   .clarity-text-container-{{ block.id }} {
                     position: relative;
                   }
                 }
 
-                  .lumin-content-{{ block.id }} {
+                  .clarity-content-{{ block.id }} {
                     padding: {{block.settings.padding_size}}px;
                   }
 
                   @media screen and (max-width: 600px) {
-                    .lumin-content-{{ block.id }} {
+                    .clarity-content-{{ block.id }} {
                     padding: {{block.settings.padding_size_mobile}}px {{block.settings.padding_left_mobile}}px;
                     }
                   }
 
-                  .lumin-text-{{ block.id }} {
+                  .clarity-text-{{ block.id }} {
                     background: {{ block.settings.bg_color }};
                     text-align: {{block.settings.desktop_content_alignment}};
                     color: {{ block.settings.text_color }};
                   }
-                 .lumin-card-{{ block.id }} {
+                 .clarity-card-{{ block.id }} {
                       width: {{block.settings.icon_size}}% !important;
                       height: 100%;
                       overflow: hidden;
@@ -760,43 +760,43 @@
                       background-repeat: no-repeat;background-position: 50% 50%;
                   }
 
-                  .lumin-head-{{ block.id }} svg {
+                  .clarity-head-{{ block.id }} svg {
                       width: {{block.settings.icon_size}}% !important;
                       height: 250px;
                       border-radius: {{block.settings.icon_corner}}%;
                       background: rgb(229 229 229 / 57%);
                   }
 
-                  .lumin-head-{{ block.id }} h2 {
+                  .clarity-head-{{ block.id }} h2 {
                     color: {{ block.settings.head_color }};
                     {% if block.settings.use_body_font %}font-family: var(--font-body-family);{% endif %}
                     font-size: {{ block.settings.head_size_d }}px;
                     margin:0;
                   }
                 @media screen and (max-width: 749px) {
-                   .lumin-head-{{ block.id }} h2 {
+                   .clarity-head-{{ block.id }} h2 {
                     font-size: {{ block.settings.head_size_m }}px;
                   }
                 }
-                  .lumin-text-{{ block.id }} p {
+                  .clarity-text-{{ block.id }} p {
                     color: {{ block.settings.text_color }};
                     font-size: {{ block.settings.text_size_d }}px;
                     margin:0;
                   }
                 @media screen and (max-width: 749px) {
-                   .lumin-text-{{ block.id }} p {
+                   .clarity-text-{{ block.id }} p {
                     font-size: {{ block.settings.text_size_m }}px;
                   }
                 }
               </style>
               <div
-                class="column-{{ block.id }} lumin-text-{{ section.id }}{% if block.settings.small_hide %} small-hide{% endif %}{% if block.settings.medium_hide %} medium-hide{% endif %}{% if block.settings.large_up_hide %} large-up-hide{% endif %}"
+                class="column-{{ block.id }} clarity-text-{{ section.id }}{% if block.settings.small_hide %} small-hide{% endif %}{% if block.settings.medium_hide %} medium-hide{% endif %}{% if block.settings.large_up_hide %} large-up-hide{% endif %}"
                 {{ block.shopify_attributes }}
               >
-                <div class="lumin-text-container-{{ block.id }} lumin-head-{{ block.id }}">
+                <div class="clarity-text-container-{{ block.id }} clarity-head-{{ block.id }}">
                   {%- if block.settings.icon != blank -%}
                     <div
-                      class="lumin-card-{{ block.id }}"
+                      class="clarity-card-{{ block.id }}"
                       style="display:block;background-image:url({{ block.settings.icon | img_url: '1000x' }});"
                     ></div>
                   {% else %}
@@ -809,30 +809,30 @@
                     and block.settings.subtitle == blank
                     and block.settings['button-text'] == blank
                   %}
-                    <div class="lumin-content-{{ block.id }}">
+                    <div class="clarity-content-{{ block.id }}">
                       {% if block.settings.head != blank %}
                         <div
-                          class="lumin-text-{{ block.id }}"
+                          class="clarity-text-{{ block.id }}"
                           style=" margin-top:0; margin-bottom: {{ block.settings.margin_bottom }}px;"
                         >
                           <h2>
                             {{
                               block.settings.head
-                              | replace: '[', '<span class="lumin-text__fancy1">'
+                              | replace: '[', '<span class="clarity-text__fancy1">'
                               | replace: ']', '</span>'
-                              | replace: '((', '<span class="lumin-text__fancy2">'
+                              | replace: '((', '<span class="clarity-text__fancy2">'
                               | replace: '))', '</span>'
                             }}
                           </h2>
                         </div>
                       {% endif %}
                       {% if block.settings.subtitle != blank %}
-                        <div class="lumin-text-{{ block.id }} rte">
+                        <div class="clarity-text-{{ block.id }} rte">
                           {{
                             block.settings.subtitle
-                            | replace: '[', '<span class="lumin-text__fancy1">'
+                            | replace: '[', '<span class="clarity-text__fancy1">'
                             | replace: ']', '</span>'
-                            | replace: '((', '<span class="lumin-text__fancy2">'
+                            | replace: '((', '<span class="clarity-text__fancy2">'
                             | replace: '))', '</span>'
                           }}
                         </div>
@@ -891,24 +891,24 @@
           vertical-align: middle;
         }
 
-        .lumin-image-{{ section.id }} {
+        .clarity-image-{{ section.id }} {
             position: relative;
             overflow: hidden;
             border-radius:{{ section.settings.video_border }}px;
           }
           {% if section.settings.zoom_hover %}
            @media screen and (min-width: 750px) {
-           .lumin-image-{{ section.id }} img:hover {
+           .clarity-image-{{ section.id }} img:hover {
               transform: scale(1.2);
              transition: all 0.5s ease-in;
             }
-             .lumin-text-{{ section.id }}:hover {
+             .clarity-text-{{ section.id }}:hover {
                transition: background-color 0.3s ease;
            }
           }
             {% endif %}
 
-          .lumin-image-{{ section.id }}--p {
+          .clarity-image-{{ section.id }}--p {
             opacity: 1;
             position: absolute;
             pointer-events: none;
@@ -920,25 +920,25 @@
             letter-spacing: 0;
           }
 
-           .lumin-text-{{ section.id }} {
+           .clarity-text-{{ section.id }} {
             border-radius:{{ section.settings.video_border }}px;
             margin-bottom: {{ section.settings.grid_space }}px;
            }
 
-          .lumin-text-{{ section.id }} a {
+          .clarity-text-{{ section.id }} a {
             margin-top: 15px;
            }
-          .lumin-image-{{ section.id }} img {
+          .clarity-image-{{ section.id }} img {
             transition: all 0.5s ease-in;
             margin-bottom: -8px;
             border-radius:{{ section.settings.video_border }}px;
            }
            {% if section.settings.zoom_hover %}
-          .lumin-image-{{ section.id }}:hover img {
+          .clarity-image-{{ section.id }}:hover img {
             transform: scale(1.2);
            }
            {% endif %}
-          .lumin-image-{{ section.id }} svg {
+          .clarity-image-{{ section.id }} svg {
             transition: all 0.5s ease-in;
             margin-bottom: -8px;
             width: 100%;
@@ -947,7 +947,7 @@
             background: #f2f2f2;
            }
            @media screen and (max-width: 749px) {
-           .lumin-text-{{ section.id }}  {
+           .clarity-text-{{ section.id }}  {
              transition: all 0.5s ease-in;
            }
          }
@@ -1010,7 +1010,7 @@
 
 {% schema %}
 {
-  "name": "Lumin Grids",
+  "name": "clarity Grids",
    "disabled_on": {
   "groups": ["header", "footer", "custom.popup"]
    },
@@ -2405,8 +2405,8 @@
   ],
    "presets": [
     {
-      "name": "Lumin Grids",
-      "category": "Lumin Sections",
+      "name": "clarity Grids",
+      "category": "clarity Sections",
       "blocks": [
       {
         "type": "image"

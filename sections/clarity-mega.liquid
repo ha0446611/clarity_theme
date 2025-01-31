@@ -1,5 +1,5 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
-{{ 'lumin-mega.css' | asset_url | stylesheet_tag }}
+{{ 'clarity-mega.css' | asset_url | stylesheet_tag }}
 {%- assign section.id = section.id | replace: '+', '' -%}
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -35,7 +35,7 @@
 </style>
 {% if section.settings.full-width  %}<style>.lm-image-{{section.id}} { border-radius:0 !important;}.lm-image-{{section.id}}>* { border-radius:0 !important;}</style>{% endif %}
 {% assign scheme1 = settings.color_schemes | first %}
-<section id="LM--{{ section.id }}" class="LM--{{ section.id }} lumin-section__main lumin-section__section">
+<section id="LM--{{ section.id }}" class="LM--{{ section.id }} clarity-section__main clarity-section__section">
 <div class="color-{{ section.settings.color_scheme_main }} gradient">
  <div class="image-with-text image-with-text--{{ section.settings.content_layout }}{% unless section.settings.full-width  %} page-width{% endunless %} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == scheme1 and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding section-{{ section.id }}-margin{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
   <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
@@ -82,7 +82,7 @@
               <h2
                 class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
                 {{ block.shopify_attributes }}>
-                {{ block.settings.heading | replace: '[', '<span class="lumin-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="lumin-text__fancy2">' | replace: '))', '</span>' }}
+                {{ block.settings.heading | replace: '[', '<span class="clarity-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="clarity-text__fancy2">' | replace: '))', '</span>' }}
               </h2>
             {%- when 'caption' -%}
               <p
@@ -94,7 +94,7 @@
               {% render 'list-feature-block', block: block %}
             {%- when 'text' -%}
               <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-                {{ block.settings.text | replace: '[', '<span class="lumin-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="lumin-text__fancy2">' | replace: '))', '</span>' }}
+                {{ block.settings.text | replace: '[', '<span class="clarity-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="clarity-text__fancy2">' | replace: '))', '</span>' }}
               </div>
             {%- when 'testimonial-images' -%}
               {% render 'testimonial-image-bar-block', block: block %}
@@ -116,37 +116,37 @@
                 </a>
               {%- endif -%}
             {%- when 'icons' -%}
-             <div id="LM--{{ block.id }}" class="lumin-section-block lumin-section__block-id-{{ block.id }} lumin-section__block--{{ block.type }}" {{ block.shopify_attributes }} >
+             <div id="LM--{{ block.id }}" class="clarity-section-block clarity-section__block-id-{{ block.id }} clarity-section__block--{{ block.type }}" {{ block.shopify_attributes }} >
               {% render 'icons-block', block: block %}
              </div>
             {%- when 'collapsible_content' -%}
-             <div id="LM--{{ block.id }}" class="lumin-section-block lumin-section__block-id-{{ block.id }} lumin-section__block--{{ block.type }}" {{ block.shopify_attributes }} >
+             <div id="LM--{{ block.id }}" class="clarity-section-block clarity-section__block-id-{{ block.id }} clarity-section__block--{{ block.type }}" {{ block.shopify_attributes }} >
               {% render 'collapsible-row-block', block: block, section: section %}
              </div>
             {%- when 'countdown_timer' -%}
-             <div id="LM--{{ block.id }}" class="lumin-section-block lumin-section__block-id-{{ block.id }} lumin-section__block--{{ block.type }}" {{ block.shopify_attributes }} >
+             <div id="LM--{{ block.id }}" class="clarity-section-block clarity-section__block-id-{{ block.id }} clarity-section__block--{{ block.type }}" {{ block.shopify_attributes }} >
               {% render 'countdown-timer-block', block: block, section: section %}
              </div>
             {%- when 'newsletter' -%}
-            <div id="LM--{{ block.id }}" class="lumin-section-block lumin-section__block-id-{{ block.id }} lumin-section__block--{{ block.type }}" {{ block.shopify_attributes }} >      
+            <div id="LM--{{ block.id }}" class="clarity-section-block clarity-section__block-id-{{ block.id }} clarity-section__block--{{ block.type }}" {{ block.shopify_attributes }} >      
              {% render 'newsletter-block', block: block, section: section %}
             </div>
              {%- when 'fancy_heading' -%}
-            <div id="LM--{{ block.id }}" class="lumin-section-block lumin-section__block-id-{{ block.id }}" {{ block.shopify_attributes }} >      
+            <div id="LM--{{ block.id }}" class="clarity-section-block clarity-section__block-id-{{ block.id }}" {{ block.shopify_attributes }} >      
              {% render 'fancy-heading-block', block: block, section: section %}
             </div>
              {%- when 'text_columns' -%}
-            <div id="LM--{{ block.id }}" class="lumin-section-block lumin-section__block-id-{{ block.id }} lumin-section__block--{{ block.type }}" {{ block.shopify_attributes }} >      
+            <div id="LM--{{ block.id }}" class="clarity-section-block clarity-section__block-id-{{ block.id }} clarity-section__block--{{ block.type }}" {{ block.shopify_attributes }} >      
              {% render 'text-columns-block', block: block, section: section %}
             </div>
             {%- when 'image' -%}
-             <div id="LM--{{ block.id }}" class="lumin-section-block lumin-section__block-id-{{ block.id }}" {{ block.shopify_attributes }} >  
+             <div id="LM--{{ block.id }}" class="clarity-section-block clarity-section__block-id-{{ block.id }}" {{ block.shopify_attributes }} >  
              {% render 'image-block', block: block, section: section %}
              </div>
              {%- when 'video' -%}
              {% render 'video-block', block: block, section: section %}
             {%- when 'divider' -%}
-              <div class="lumin-section-block lumin-section__block-id-{{ block.id }}" style="margin:0;" {{ block.shopify_attributes }} >      
+              <div class="clarity-section-block clarity-section__block-id-{{ block.id }}" style="margin:0;" {{ block.shopify_attributes }} >      
               {% render 'spacer-divider-block', block: block, section: section %}
               </div>
             {%- when 'percent' -%}
@@ -161,7 +161,7 @@
 </section>               
 {% schema %}
 {
-  "name": "Lumin Mega Section",
+  "name": "clarity Mega Section",
   "class": "section",
    "disabled_on": {
   "groups": ["header", "footer", "custom.popup"]
@@ -2342,7 +2342,7 @@
           "type": "html",
           "id": "custom_css",
           "label": "CSS",
-          "info": "Target the text in the square brackets with the class .lumin-section__fancy"
+          "info": "Target the text in the square brackets with the class .clarity-section__fancy"
         }
       ]
     },
@@ -3884,7 +3884,7 @@
   ],
   "presets": [
     {
-      "name": "Lumin Mega Section",
+      "name": "clarity Mega Section",
       "blocks": [
         {
           "type": "heading"

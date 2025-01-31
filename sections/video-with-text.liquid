@@ -31,7 +31,7 @@
     {%- if section.settings.video == null -%}
          <div class="video-media" style="background: #f2f2f2;display: block;"></div>
       <span class="deferred-media__poster-button motion-reduce" style="z-index:2;">
-          {%- render 'lumin-play-icon' -%}
+          {%- render 'clarity-play-icon' -%}
         </span>
     {%- else -%}
       {{
@@ -55,10 +55,10 @@
           class="video-text-heading inline-richtext {{ section.settings.heading_size }}"
           {{ block.shopify_attributes }}
         >
-          {{ section.settings.heading | replace: '[', '<span class="lumin-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="lumin-text__fancy2">' | replace: '))', '</span>' }}
+          {{ section.settings.heading | replace: '[', '<span class="clarity-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="clarity-text__fancy2">' | replace: '))', '</span>' }}
         </h2>
         <div class="video-text-text rte {{ section.settings.text_style }}" {{ block.shopify_attributes }}>
-          <p>{{ section.settings.text | replace: '[', '<span class="lumin-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="lumin-text__fancy2">' | replace: '))', '</span>' }}</p>
+          <p>{{ section.settings.text | replace: '[', '<span class="clarity-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="clarity-text__fancy2">' | replace: '))', '</span>' }}</p>
         </div>
         <div
           class="video-text-buttons"
@@ -107,7 +107,7 @@
     height: 100%;
     {% if section.settings.layout == 'grid' %}border-radius:{{ section.settings.video_border }}px;{% endif %}
   }
-   .lumin-video-placeholder {
+   .clarity-video-placeholder {
     position: absolute;
     top:0;
     left:0;

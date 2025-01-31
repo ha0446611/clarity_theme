@@ -119,7 +119,7 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            {{ block.settings.heading | replace: '[', '<span class="lumin-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="lumin-text__fancy2">' | replace: '))', '</span>' }}
+            {{ block.settings.heading | replace: '[', '<span class="clarity-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="clarity-text__fancy2">' | replace: '))', '</span>' }}
           </h2>
         {%- when 'paragraph' -%}
           <div
@@ -130,7 +130,7 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            {{ block.settings.text | replace: '[', '<span class="lumin-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="lumin-text__fancy2">' | replace: '))', '</span>' }}
+            {{ block.settings.text | replace: '[', '<span class="clarity-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="clarity-text__fancy2">' | replace: '))', '</span>' }}
           </div>
         {%- when 'email_form' -%}
           <div {{ block.shopify_attributes }} class="email-field" style="display: contents;">
@@ -180,7 +180,7 @@
                 </div>
                 {%- if section.settings.show_small_text -%}
                 <small class="newsletter-form__message form__message small-text" >
-                    {{ section.settings.small_text | replace: '[', '<span class="lumin-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="lumin-text__fancy2">' | replace: '))', '</span>' }}
+                    {{ section.settings.small_text | replace: '[', '<span class="clarity-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="clarity-text__fancy2">' | replace: '))', '</span>' }}
                   </small>
                 {% endif %}
                 {%- if form.errors -%}

@@ -17,7 +17,7 @@
         wrapper_class: "image-wrapper"
       %}
     {%- else -%}
-      {% render 'lumin-placeholder' %}
+      {% render 'clarity-placeholder' %}
     {%- endif -%}
     {%- unless block.settings.hide_img_2 -%}
       {%- if block.settings.image_2 != blank -%}
@@ -28,7 +28,7 @@
           wrapper_class: "image-wrapper"
         %}
       {%- else -%}
-        {% render 'lumin-placeholder' %}
+        {% render 'clarity-placeholder' %}
       {%- endif -%}
     {% endunless %}
     {%- unless block.settings.hide_img_3 -%}
@@ -40,7 +40,7 @@
           wrapper_class: "image-wrapper"
         %}
       {%- else -%}
-        {% render 'lumin-placeholder' %}
+        {% render 'clarity-placeholder' %}
       {%- endif -%}
     {% endunless %}
     {%- unless block.settings.hide_img_4 -%}
@@ -52,7 +52,7 @@
           wrapper_class: "image-wrapper"
         %}
       {%- else -%}
-        {% render 'lumin-placeholder' %}
+        {% render 'clarity-placeholder' %}
       {%- endif -%}
     {% endunless %}
     {%- unless block.settings.hide_img_5 -%}
@@ -64,16 +64,16 @@
           wrapper_class: "image-wrapper"
         %}
       {%- else -%}
-        {% render 'lumin-placeholder' %}
+        {% render 'clarity-placeholder' %}
       {%- endif -%}
     {% endunless %}
   </div>
   <span class="{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}">
     {{
       block.settings.text_block
-      | replace: '[', '<span class="lumin-text__fancy1">'
+      | replace: '[', '<span class="clarity-text__fancy1">'
       | replace: ']', '</span>'
-      | replace: '((', '<span class="lumin-text__fancy2">'
+      | replace: '((', '<span class="clarity-text__fancy2">'
       | replace: '))', '</span>'
     -}}
   </span>

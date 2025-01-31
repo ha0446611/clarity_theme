@@ -24,13 +24,13 @@
   endif
 -%}
 <style>
-  .lumin-collection-card-{{section.id}} {
+  .clarity-collection-card-{{section.id}} {
     background: none;
   }
-  .lumin-collection-card-{{section.id}} img {
+  .clarity-collection-card-{{section.id}} img {
     border-radius: {{ section.settings.image_radius | append: '%' }};
   }
-  .lumin-collection-card-{{section.id}} svg {
+  .clarity-collection-card-{{section.id}} svg {
     border-radius: {{ section.settings.image_radius | append: '%' }};
     background: #f2f2f2;
   }
@@ -53,7 +53,7 @@
           id="SectionHeading-{{ section.id }}"
           class="collection-list-title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
         >
-          {{ section.settings.title | replace: '[', '<span class="lumin-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="lumin-text__fancy2">' | replace: '))', '</span>' }}
+          {{ section.settings.title | replace: '[', '<span class="clarity-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="clarity-text__fancy2">' | replace: '))', '</span>' }}
         </h2>
 
         {%- if section.settings.show_view_all and show_mobile_slider -%}

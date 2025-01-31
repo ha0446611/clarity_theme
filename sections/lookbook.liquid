@@ -1,69 +1,69 @@
 {% liquid 
-  # Lumin Lookbook
-  # © 2024 LuminTheme
-  # https://www.lumintheme.com
+  # clarity Lookbook
+  # © 2024 clarityTheme
+  # https://www.claritytheme.com
 %}
 
 {%- style-%}
-  #lumin-lookbook-{{ section.id }}  {
+  #clarity-lookbook-{{ section.id }}  {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
   @media screen and (min-width: 750px) {
-    #lumin-lookbook-{{ section.id }} {
+    #clarity-lookbook-{{ section.id }} {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
     
-  .lumin-lookbook {
+  .clarity-lookbook {
     display: block;
   }
 
-  .lumin-lookbook .section-header .title {
+  .clarity-lookbook .section-header .title {
     margin: 0 0 .5rem;
   }
 
-  .lumin-lookbook .section-header .description {
+  .clarity-lookbook .section-header .description {
     margin-bottom: 2rem;
   }
 
-  .lumin-lookbook-inner {
+  .clarity-lookbook-inner {
     position: relative;
   }
 
-  .lumin-lookbook .img-wrapper img {
+  .clarity-lookbook .img-wrapper img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: {{ section.settings.image_border_radius | append: 'rem' }};
   }
-  .lumin-lookbook .img-wrapper svg {
+  .clarity-lookbook .img-wrapper svg {
     background: #f2f2f2;
     border-radius: {{ section.settings.image_border_radius | append: 'rem' }};
   }
 
-  .lumin-lookbook .img-wrapper-mobile {
+  .clarity-lookbook .img-wrapper-mobile {
     display: block;
   }
 
-  .lumin-lookbook .img-wrapper-desktop {
+  .clarity-lookbook .img-wrapper-desktop {
     display: none;
   }
 
   @media screen and (min-width: 750px) {
-    .lumin-lookbook .img-wrapper-mobile { display: none; }
-    .lumin-lookbook .img-wrapper-desktop { display: block; }
+    .clarity-lookbook .img-wrapper-mobile { display: none; }
+    .clarity-lookbook .img-wrapper-desktop { display: block; }
   }
 
-  .lumin-lookbook-point-list {
+  .clarity-lookbook-point-list {
   }
 
-  .lumin-lookbook-point-list-item {
+  .clarity-lookbook-point-list-item {
   }
 
-  .lumin-lookbook-point-list-item button {
+  .clarity-lookbook-point-list-item button {
     position: absolute;
     cursor: pointer;
     display: block;
@@ -73,26 +73,26 @@
     border-radius: 50%;
   }
 
-  .lumin-lookbook-point-list-item button > span {
+  .clarity-lookbook-point-list-item button > span {
     display: block;
     padding: .25rem;
     border-radius: 50%;
     border: 1px solid currentColor;
     background-color: transparent;
     transition: all .2s ease-out;
-    animation: lumin-lookbook-point-animation-{{ section.id }} 2s infinite;
+    animation: clarity-lookbook-point-animation-{{ section.id }} 2s infinite;
   }
 
-  #lumin-lookbook-{{ section.id }} .lumin-lookbook-point-list-item button span {
+  #clarity-lookbook-{{ section.id }} .clarity-lookbook-point-list-item button span {
     border-color: {{ section.settings.point_color }};
   }
 
-  .lumin-lookbook-point-list-item button:hover > span, 
-  .lumin-lookbook-point-list-item button:focus > span {
+  .clarity-lookbook-point-list-item button:hover > span, 
+  .clarity-lookbook-point-list-item button:focus > span {
     background-color: rgba(255, 255, 255, 0.5);
   }
 
-  .lumin-lookbook-point-list-item button > span > span {
+  .clarity-lookbook-point-list-item button > span > span {
     background: currentColor;
     display: block;
     width: 1rem;
@@ -100,20 +100,20 @@
     border-radius: 50%;
   }
 
-  #lumin-lookbook-{{ section.id }} .lumin-lookbook-point-list-item button > span > span {
+  #clarity-lookbook-{{ section.id }} .clarity-lookbook-point-list-item button > span > span {
     background: {{ section.settings.point_color }};
     width: {{ section.settings.point_diameter | append: 'rem' }};
     height: {{ section.settings.point_diameter | append: 'rem' }};
   }
 
-  @keyframes lumin-lookbook-point-animation-{{ section.id }} {
+  @keyframes clarity-lookbook-point-animation-{{ section.id }} {
     0% { box-shadow: 0 0 0 0px rgba({{ section.settings.point_color | color_to_rgb | remove: 'rgb(' | remove: ')' }}, 0.25); }
     100% { box-shadow: 0 0 0 20px rgba({{ section.settings.point_color | color_to_rgb | remove: 'rgb(' | remove: ')' }}, 0); }
   }
 
   @media (max-width: 749px) {
     {% for block in section.blocks %}
-      #lumin-lookbook-{{ section.id }} .lumin-lookbook-point-list-item:nth-child({{ forloop.index }}) button {
+      #clarity-lookbook-{{ section.id }} .clarity-lookbook-point-list-item:nth-child({{ forloop.index }}) button {
         left: {{ block.settings.mobile_pos_left }}%;
         top: {{ block.settings.mobile_pos_top }}%;
       }
@@ -122,7 +122,7 @@
 
   @media (min-width: 750px) {
     {% for block in section.blocks %}
-      #lumin-lookbook-{{ section.id }} .lumin-lookbook-point-list-item:nth-child({{ forloop.index }}) button {
+      #clarity-lookbook-{{ section.id }} .clarity-lookbook-point-list-item:nth-child({{ forloop.index }}) button {
         left: {{ block.settings.desktop_pos_left }}%;
         top: {{ block.settings.desktop_pos_top }}%;
       }
@@ -145,7 +145,7 @@
     z-index: 9;
   }
 
-  #lumin-lookbook-{{ section.id }}  .lm-tooltip {
+  #clarity-lookbook-{{ section.id }}  .lm-tooltip {
     background: {{ section.settings.tooltip_bg_color }};
     color: {{ section.settings.tooltip_color }};
     box-shadow: 0 0 2rem rgba({{ section.settings.tooltip_color | color_to_rgb | remove: 'rgb(' | remove: ')' }}, .2);
@@ -183,17 +183,17 @@
     margin-bottom: 1rem;
   }
 
-  .lm-tooltip .lumin-lookbook-product-img {
+  .lm-tooltip .clarity-lookbook-product-img {
     width: 100%;
     height: auto;
     margin: 0 0 1rem;
   }
 
-  .lm-tooltip .lumin-lookbook-product-price {
+  .lm-tooltip .clarity-lookbook-product-price {
     margin: 0 0 .5rem;
   }
 
-  .lm-tooltip .lumin-lookbook-product-price-compare {
+  .lm-tooltip .clarity-lookbook-product-price-compare {
     opacity: .6;
     margin-right: .5rem;
   }
@@ -210,7 +210,7 @@
     super();
 
     this.injectVendorScripts();
-    this.querySelectorAll('.lumin-lookbook-point-list-item').forEach((elem) => {
+    this.querySelectorAll('.clarity-lookbook-point-list-item').forEach((elem) => {
       this.handleTooltip(elem);
     });
   }
@@ -295,27 +295,27 @@
   }
 }
 
-customElements.define('lumin-lookbook', LmLookBook);
+customElements.define('clarity-lookbook', LmLookBook);
 
 {%- endjavascript -%}
 
-<lumin-lookbook 
-  id="lumin-lookbook-{{ section.id }}"
-  class="lumin-lookbook color-{{ section.settings.color_scheme }} gradient {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+<clarity-lookbook 
+  id="clarity-lookbook-{{ section.id }}"
+  class="clarity-lookbook color-{{ section.settings.color_scheme }} gradient {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
 
   <div 
     class="section-header page-width" 
     style="text-align: {{ section.settings.header_text_align }};">
     {%- if section.settings.heading != blank -%}
       <h2 
-        id="lumin-lookbook-heading"
+        id="clarity-lookbook-heading"
         class="title inline-richtext {{ section.settings.heading_size }}">
-        {{ section.settings.heading | replace: '[', '<span class="lumin-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="lumin-text__fancy2">' | replace: '))', '</span>' }}
+        {{ section.settings.heading | replace: '[', '<span class="clarity-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="clarity-text__fancy2">' | replace: '))', '</span>' }}
       </h2>
     {%- endif -%}
     {%- if section.settings.description != blank %}
       <div class="description rte">
-        {{ section.settings.description | replace: '[', '<span class="lumin-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="lumin-text__fancy2">' | replace: '))', '</span>' }}
+        {{ section.settings.description | replace: '[', '<span class="clarity-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="clarity-text__fancy2">' | replace: '))', '</span>' }}
       </div>
     {% endif %}
   </div>
@@ -324,7 +324,7 @@ customElements.define('lumin-lookbook', LmLookBook);
     class="{% if section.settings.container %}page-width{% endif %}"
     style="max-width: {{ section.settings.container_max_width | append: 'px' }}">
 
-    <div class="lumin-lookbook-inner">
+    <div class="clarity-lookbook-inner">
 
       <div class="img-wrapper img-wrapper-mobile">
         {% if section.settings.mobile_image == nil %}
@@ -354,12 +354,12 @@ customElements.define('lumin-lookbook', LmLookBook);
       </div>
 
       <div 
-        class="lumin-lookbook-point-list" 
-        aria-labelledby="lumin-lookbook-heading"
+        class="clarity-lookbook-point-list" 
+        aria-labelledby="clarity-lookbook-heading"
         role="list">
         {% for block in section.blocks %}
           <div 
-            class="lumin-lookbook-point-list-item" 
+            class="clarity-lookbook-point-list-item" 
             {{ block.shopify_attributes }}
             role="listitem">
             {% liquid
@@ -372,35 +372,35 @@ customElements.define('lumin-lookbook', LmLookBook);
             <div class="lm-tooltip" role="tooltip">
               {% unless block.settings.title == blank %}
                 <h3 class="title">
-                  {{ block.settings.title | replace: '[', '<span class="lumin-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="lumin-text__fancy2">' | replace: '))', '</span>' }}
+                  {{ block.settings.title | replace: '[', '<span class="clarity-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="clarity-text__fancy2">' | replace: '))', '</span>' }}
                 </h3>
               {% endunless %}
               {% if product != nil and block.settings.show_image %} 
                   <img 
-                    class="lumin-lookbook-product-img" 
+                    class="clarity-lookbook-product-img" 
                     src="{{ product.featured_image | image_url: width: 600 }}" 
                     width="600"
                     height="{{ 600 | divided_by: product.featured_image.aspect_ratio | round }}" 
                     loading="lazy">
               {% endif %}
               {% if product != nil and block.settings.show_price %} 
-                <p class="lumin-lookbook-product-price">
+                <p class="clarity-lookbook-product-price">
                   {% if product.compare_at_price > product.price %}
-                    <span class="lumin-lookbook-product-price-compare">
+                    <span class="clarity-lookbook-product-price-compare">
                       <span class="visually-hidden visually-hidden--inline">
                         {{ 'products.product.price.regular_price' | t }}
                       </span>
                       <s>{{ product.compare_at_price | money }}</s>
                     </span>
                   {% endif %}
-                  <span class="lumin-lookbook-product-price-final">
+                  <span class="clarity-lookbook-product-price-final">
                     {{ product.price | money }}
                   </span>
                 </p>
               {% endif %}
               {% unless block.settings.description == blank %}
                 <div class="description rte">
-                  {{ block.settings.description | replace: '[', '<span class="lumin-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="lumin-text__fancy2">' | replace: '))', '</span>' }}
+                  {{ block.settings.description | replace: '[', '<span class="clarity-text__fancy1">' | replace: ']', '</span>' | replace: '((', '<span class="clarity-text__fancy2">' | replace: '))', '</span>' }}
                 </div>
               {% endunless %}
               {% if product != nil and block.settings.btn_text != blank %} 
@@ -418,11 +418,11 @@ customElements.define('lumin-lookbook', LmLookBook);
 
     </div>
   </div>
-</lumin-lookbook>
+</clarity-lookbook>
 
 {% schema %}
 {
-  "name": "Lumin Lookbook",
+  "name": "clarity Lookbook",
   "tag": "section",
   "class": "section",
    "disabled_on": {
@@ -695,7 +695,7 @@ customElements.define('lumin-lookbook', LmLookBook);
   ],
   "presets": [
     {
-      "name": "Lumin Lookbook"
+      "name": "clarity Lookbook"
     }
   ]
 }

@@ -15,10 +15,10 @@
         font-weight: {{block.settings.font_style}};
         min-height: 0.5rem;margin-bottom: 0;color: currentColor;
      }
-    .lumin-sibling input[type=radio]+ label{
+    .clarity-sibling input[type=radio]+ label{
       border: none !important;
     }
-    .lumin-sibling input[type=radio]:checked+label{
+    .clarity-sibling input[type=radio]:checked+label{
       border: var(--variant-pills-border-width) solid rgb(var(--color-foreground)) !important;
       outline:none;
     }
@@ -69,7 +69,7 @@
           {% assign thumb_image = block.settings.combined_listing_swatch_size | times: 2 | append: 'x' %}
           {% assign variant_image_url = related_product.featured_image | img_url: thumb_image %}
 
-          <div class="product-form__swatch lumin-sibling">
+          <div class="product-form__swatch clarity-sibling">
             <input
               type="radio"
               id="related_product-{{ related_product.id }}-{{ block.id }}"
