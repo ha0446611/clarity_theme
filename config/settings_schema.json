@@ -3,7 +3,9 @@
     "name": "theme_info",
     "theme_name": "lorem ipsum",
     "theme_version": "14.7.1",
-    "theme_author": "Eigty 4 Digital"
+    "theme_author": "Eigty 4 Digital",
+    "theme_documentation_url": "https://help.lumintheme.com/",
+    "theme_support_url": "https://help.lumintheme.com/"
   },
 
   {
