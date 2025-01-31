@@ -8,7 +8,7 @@
       {% elsif settings.upsell_product_per_page == 'two' %}
     grid-auto-columns: minmax(40%, 1fr);
         {% else %}
-    grid-auto-columns: minmax(26%, 1fr);
+    grid-auto-columns: minmax(26%, 1fr); 
           {% endif %}
   }
   .cart-drawer-upsell-list[data-list-style-cart-drawer="stack"]
@@ -81,7 +81,7 @@
               </a>
               <product-form data-section-id="{{ id }}">
                 {%- form 'product', product, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                  <div class="lumin-wrapper" style="justify-items: {{ settings.product_text_align }};">
+                  <div class="clarity-wrapper" style="justify-items: {{ settings.product_text_align }};">
                     {% if product.has_only_default_variant %}
                       <input type="hidden" name="id" value="{{ product.first_available_variant.id }}">
                       <div class="product-option">

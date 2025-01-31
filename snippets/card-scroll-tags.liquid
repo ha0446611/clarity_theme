@@ -5,7 +5,7 @@
       <div style="display: flex;">
           {% for tag in product.tags %}
               <div
-                class=" lumin-card-tag lumin-text-{{ block.id }}"
+                class=" clarity-card-tag clarity-text-{{ block.id }}"
                 role="region"
                 aria-label="Announcement"
                 {{ block.shopify_attributes }}
@@ -14,7 +14,7 @@
                  <li><a href="/collections/all/{{ tag | handleize }}">{{ tag }}</a></li>
                 </span>
               </div>
-      
+       
         {% endfor %}
       </div>
   </div>

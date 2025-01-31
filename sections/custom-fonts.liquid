@@ -3,7 +3,7 @@
     {% assign items = section.blocks | reverse  %}
       {% for block in items %}
       {% assign name = block.settings.name %}
-      {% assign url = block.settings.custom_font_url  %}
+      {% assign url = block.settings.custom_font_url  %} 
       {% assign custom_font_weight = block.settings.custom_font_weight %}
       {% assign custom_font_style = block.settings.custom_font_style %}
       {% assign apply_h1 = block.settings.apply_h1 %}
@@ -92,14 +92,14 @@
 
 {% schema %}
 {
-  "name": "Lumin Custom Font",
+  "name": "clarity Custom Font",
    "disabled_on": {
   "groups": ["custom.popup", "header"]
    },
   "settings": [
     {
       "type": "header",
-      "content": "Made by [lumintheme.com](https://lumintheme.com/)"
+      "content": "Made by [claritytheme.com](https://claritytheme.com/)"
     },
     {
       "type": "paragraph",
@@ -119,7 +119,7 @@
       "settings": [
         {
           "type": "header",
-          "content": "Made by [lumintheme.com](https://lumintheme.com/)"
+          "content": "Made by [claritytheme.com](https://claritytheme.com/)"
         },
         {
           "type": "text",
@@ -274,8 +274,8 @@
   ],
 "presets": [
       {
-        "name": "Lumin Custom Fonts",
-        "category": "Lumin Sections"
+        "name": "clarity Custom Fonts",
+        "category": "clarity Sections"
       }
     ]
   }
