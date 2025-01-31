@@ -1,11 +1,11 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "lorem ipsum",
-    "theme_version": "14.7.1",
-    "theme_author": "Eigty 4 Digital",
-    "theme_documentation_url": "https://help.lumintheme.com/",
-    "theme_support_url": "https://help.lumintheme.com/"
+    "theme_name": "Clarity Theme",
+    "theme_version": "1.0",
+    "theme_author": "Clarity Themes",
+    "theme_documentation_url": "https://claritytheme.com",
+    "theme_support_url": "https://claritytheme.com"
   },
 
   {
@@ -119,10 +119,7 @@
   {
     "name": "Fancy Text",
     "settings": [
-      {
-        "type": "paragraph",
-        "content": "[Use this tutorial to setup](https://help.lumintheme.com/lumin-theme-documentation/fancy-text-settings)"
-      },
+      
       {
         "type": "paragraph",
         "content": "Use square brackets [] around text that you would like to look 'Fancy Text 1' & normal brakets (()) around text for 'Fancy Text 2'."
@@ -206,10 +203,7 @@
   {
     "name": "Sticky Add To Cart",
     "settings": [
-      {
-        "type": "paragraph",
-        "content": "[Use this tutorial to setup](https://help.lumintheme.com/lumin-theme-documentation/sticky-add-to-cart)"
-      },
+      
       {
         "type": "checkbox",
         "id": "show_sticky_cart_button",
@@ -599,10 +593,7 @@
   {
     "name": "Cart Drawer",
     "settings": [
-      {
-        "type": "paragraph",
-        "content": "[Use this tutorial to setup](https://help.lumintheme.com/lumin-theme-documentation/cart-drawer-settings)"
-      },
+      
       {
         "type": "checkbox",
         "id": "edit_mode",
@@ -695,19 +686,19 @@
         "options": [
           {
             "value": "left",
-            "label": "t:settings_schema.lumin-freeshipping-bar.settings.text_align.options__1.label"
+            "label": "t:settings_schema.clarity-freeshipping-bar.settings.text_align.options__1.label"
           },
           {
             "value": "center",
-            "label": "t:settings_schema.lumin-freeshipping-bar.settings.text_align.options__2.label"
+            "label": "t:settings_schema.clarity-freeshipping-bar.settings.text_align.options__2.label"
           },
           {
             "value": "right",
-            "label": "t:settings_schema.lumin-freeshipping-bar.settings.text_align.options__3.label"
+            "label": "t:settings_schema.clarity-freeshipping-bar.settings.text_align.options__3.label"
           }
         ],
         "default": "center",
-        "label": "t:settings_schema.lumin-freeshipping-bar.settings.text_align.label"
+        "label": "t:settings_schema.clarity-freeshipping-bar.settings.text_align.label"
       },
       {
         "type": "checkbox",
@@ -722,7 +713,7 @@
         "max": 20,
         "step": 1,
         "unit": "px",
-        "label": "t:settings_schema.lumin-freeshipping-bar.settings.range.label",
+        "label": "t:settings_schema.clarity-freeshipping-bar.settings.range.label",
         "default": 12
       },
       {
@@ -742,7 +733,7 @@
         "id": "cart_title",
         "default": "Your Cart – [x]",
         "label": "Cart Heading",
-        "info": "t:settings_schema.lumin-freeshipping-bar.settings.inline_richtext.info_2"
+        "info": "t:settings_schema.clarity-freeshipping-bar.settings.inline_richtext.info_2"
       },
       {
         "type": "range",
@@ -940,7 +931,7 @@
         "id": "payment_icon",
         "label": "Payment Methods",
         "default": "visa,master,paypal,apple_pay,shopify-pay,google-pay",
-        "info": "Add the payment method keys separated by (,) commas. (e.g., visa,master,paypal,apple_pay). You can find all payment methods [here](https://lumintheme.com/pages/payment-method-list)."
+        "info": "Add the payment method keys separated by (,) commas. (e.g., visa,master,paypal,apple_pay)."
       },
       {
         "type": "select",
@@ -1044,10 +1035,7 @@
   {
     "name": "Cart Progress Bar",
     "settings": [
-      {
-        "type": "paragraph",
-        "content": "[Use this tutorial to setup](https://help.lumintheme.com/lumin-theme-documentation/cart-progress-bar-on-lumin-themes)"
-      },
+     
       {
         "type": "checkbox",
         "id": "enable_cart_progress_bar",
@@ -1213,7 +1201,7 @@
       },
       {
         "type": "header",
-        "content": "t:settings_schema.lumin-freeshipping-bar.settings.header.content"
+        "content": "t:settings_schema.clarity-freeshipping-bar.settings.header.content"
       },
       {
         "type": "select",
@@ -1241,19 +1229,19 @@
         "options": [
           {
             "value": "left",
-            "label": "t:settings_schema.lumin-freeshipping-bar.settings.text_align.options__1.label"
+            "label": "t:settings_schema.clarity-freeshipping-bar.settings.text_align.options__1.label"
           },
           {
             "value": "center",
-            "label": "t:settings_schema.lumin-freeshipping-bar.settings.text_align.options__2.label"
+            "label": "t:settings_schema.clarity-freeshipping-bar.settings.text_align.options__2.label"
           },
           {
             "value": "right",
-            "label": "t:settings_schema.lumin-freeshipping-bar.settings.text_align.options__3.label"
+            "label": "t:settings_schema.clarity-freeshipping-bar.settings.text_align.options__3.label"
           }
         ],
         "default": "center",
-        "label": "t:settings_schema.lumin-freeshipping-bar.settings.text_align.label"
+        "label": "t:settings_schema.clarity-freeshipping-bar.settings.text_align.label"
       },
       {
         "type": "range",
@@ -1262,7 +1250,7 @@
         "max": 20,
         "step": 1,
         "unit": "px",
-        "label": "t:settings_schema.lumin-freeshipping-bar.settings.range.label",
+        "label": "t:settings_schema.clarity-freeshipping-bar.settings.range.label",
         "default": 12
       },
       {
@@ -1278,31 +1266,31 @@
       {
         "type": "color",
         "id": "cart_bar_color_container",
-        "label": "t:settings_schema.lumin-freeshipping-bar.settings.colors.label__1",
+        "label": "t:settings_schema.clarity-freeshipping-bar.settings.colors.label__1",
         "default": "#f6f6f6"
       },
       {
         "type": "color",
         "id": "cart_progress_bar_background_color",
-        "label": "t:settings_schema.lumin-freeshipping-bar.settings.colors.label__2",
+        "label": "t:settings_schema.clarity-freeshipping-bar.settings.colors.label__2",
         "default": "#f2f2f2"
       },
       {
         "type": "color",
         "id": "cart_progress_bar_color",
-        "label": "t:settings_schema.lumin-freeshipping-bar.settings.colors.label__3",
+        "label": "t:settings_schema.clarity-freeshipping-bar.settings.colors.label__3",
         "default": "#212121"
       },
       {
         "type": "color",
         "id": "cart_progress_bar_full_color",
-        "label": "t:settings_schema.lumin-freeshipping-bar.settings.colors.label__4",
+        "label": "t:settings_schema.clarity-freeshipping-bar.settings.colors.label__4",
         "default": "#10B030"
       },
       {
         "type": "color",
         "id": "cart_progress_bar_text_color",
-        "label": "t:settings_schema.lumin-freeshipping-bar.settings.colors.label__5",
+        "label": "t:settings_schema.clarity-freeshipping-bar.settings.colors.label__5",
         "default": "#212121"
       },
       {
@@ -1312,7 +1300,7 @@
         "max": 20,
         "step": 1,
         "unit": "px",
-        "label": "t:settings_schema.lumin-freeshipping-bar.settings.colors.option__1",
+        "label": "t:settings_schema.clarity-freeshipping-bar.settings.colors.option__1",
         "default": 5
       },
       {
@@ -1322,7 +1310,7 @@
         "max": 24,
         "step": 1,
         "unit": "px",
-        "label": "t:settings_schema.lumin-freeshipping-bar.settings.colors.option__2",
+        "label": "t:settings_schema.clarity-freeshipping-bar.settings.colors.option__2",
         "default": 0
       },
       {
@@ -1645,10 +1633,7 @@
         "type": "paragraph",
         "content": "t:settings_schema.color_swatch.settings.paragraph.content"
       },
-      {
-        "type": "paragraph",
-        "content": "[Use this tutorial to setup](https://help.lumintheme.com/lumin-theme-documentation/lumintheme-exclusive/custom-color-and-image-swatches)"
-      },
+     
       {
         "type": "text",
         "id": "optionName",
@@ -2462,10 +2447,7 @@
         "type": "header",
         "content": "Color Swatches"
       },
-      {
-        "type": "paragraph",
-        "content": "[Use this tutorial to setup](https://help.lumintheme.com/lumin-theme-documentation/lumintheme-exclusive/custom-color-and-image-swatches)"
-      },
+      
       {
         "type": "checkbox",
         "id": "swatch_show",
@@ -2527,7 +2509,7 @@
       {
         "type": "header",
         "content": "Scrolling tags",
-        "info": "Adjust colors, speed or font style of scrolling product tags above product cards. Use [this](https://help.lumintheme.com/lumin-theme-documentation/how-to-setup-product-cards-scrolling-tags-and-custom-badges) guide to add product tags "
+        "info": "Adjust colors, speed or font style of scrolling product tags above product cards."
       },
       {
         "type": "range",
@@ -3406,7 +3388,7 @@
       {
         "type": "header",
         "content": "Custom Badge Colors",
-        "info": "Adjust colors of custom product badges for product cards. Use [this](https://help.lumintheme.com/lumin-theme-documentation/how-to-setup-product-cards-scrolling-tags-and-custom-badges) guide to add product badges, Add product tag in following format 'Badge1:your text here', 'Badge2:your text here', 'Badge3:your text here' "
+        "info": "Adjust colors of custom product badges for product cards. Add product tag in following format 'Badge1:your text here', 'Badge2:your text here', 'Badge3:your text here' "
       },
       {
         "type": "color",

@@ -74,7 +74,7 @@
       "name": "Siblings Picker",
       "settings": {
         "paragraph": {
-          "content": "The Product Grouping Picker allows you to combine separate products together as variants [Learn More](https://help.lumintheme.com/lumin-theme-documentation/combine-separate-products-together-as-variant-options)."
+          "content": "The Product Grouping Picker allows you to combine separate products together as variants."
           },
         "text": {
           "label": "Product siblings collection name",
@@ -178,7 +178,7 @@
         }
       }
     },
-    "lumin-freeshipping-bar": {
+    "clarity-freeshipping-bar": {
       "name": "Cart Goal/Free Shipping Bar",
       "settings": {
         "fsb_goal": {
