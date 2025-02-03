@@ -57,7 +57,7 @@
         "text_78agbX": {
           "type": "text",
           "settings": {
-            "text": "<p>in the heart of a bustling city, there was a small juice stand nestled between towering skyscrapers and bustling streets. This humble beginning marked the start of a remarkable journey for our founders, Emma and David, who shared a passion for health and wellness.</p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim massa eu nisl efficitur consectetur.</p>"
           }
         }
       },
@@ -116,7 +116,7 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
-      }
+      } 
     }
   },
   "order": [
@@ -125,4 +125,4 @@
     "rich_text_YnVzfw",
     "ea4e9a6c-ad1e-44dc-8b6e-34e9654947ce"
   ]
-}
+} 

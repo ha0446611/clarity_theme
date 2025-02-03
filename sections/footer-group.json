@@ -210,7 +210,7 @@
     "waves_7mL9F3": {
       "type": "waves",
       "settings": {
-        "wave_color": "#686648",
+        "wave_color": "#000000",
         "wave_height": 71,
         "wave_speed": 10,
         "padding_top": 0,

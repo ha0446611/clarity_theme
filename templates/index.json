@@ -7,10 +7,10 @@
         "slide_QbRz6a": {
           "type": "slide",
           "settings": {
-            "caption": "Revive",
+            "caption": "Lorem Ipsum",
             "block_cap_size": 33,
             "cap_color": "#2e2e2e",
-            "heading": "For Skin as Unique as You Are",
+            "heading": "Lorem ipsum dolor sit amet.",
             "block_head_size-2": 58,
             "block_head_size-mobile": 34,
             "block_head_line": 1.1,
@@ -200,7 +200,7 @@
         "tab_fdVzEX": {
           "type": "tab",
           "settings": {
-            "heading": "Face Care",
+            "heading": "Lorem ipsum",
             "collection": "",
             "description": "",
             "collection_text_alignment": "left",
@@ -211,7 +211,7 @@
         "tab_GEXYxG": {
           "type": "tab",
           "settings": {
-            "heading": "Skincare",
+            "heading": "Lorem ipsum",
             "collection": "",
             "description": "",
             "collection_text_alignment": "left",
@@ -301,16 +301,16 @@
             "padding_size_mobile": 40,
             "padding_left_mobile": 40,
             "text_border": 0,
-            "bg_color": "#f1e0cb",
+            "bg_color": "#EBEBEB",
             "icon_size": 50,
             "icon_corner": 0,
-            "head": "Glow from Within",
+            "head": "Lorem Ipsum",
             "use_body_font": false,
             "head_color": "#000000",
             "head_size_d": 30,
             "head_size_m": 24,
             "margin_bottom": 15,
-            "subtitle": "<p>Elevate your skincare game and achieve radiant, healthy skin with a routine that’s as unique as you are.</p>",
+            "subtitle": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget augue vitae orci feugiat lacinia sed non neque. Mauris aliquet, augue vitae accumsan viverra, enim turpis feugiat lectus, sit amet varius justo eros sed ante. Vivamus accumsan justo risus, in cursus dolor facilisis condimentum.</p>",
             "text_color": "#000000",
             "text_size_d": 16,
             "text_size_m": 14,
@@ -337,12 +337,12 @@
             "padding_size_in": 10,
             "text_border": 8,
             "bg_color": "rgba(0,0,0,0)",
-            "head": "Timeless Beauty, Ageless Skin.",
+            "head": "Lorem ipsum dolor sit amet.",
             "head_color": "#ffffff",
             "head_size_d": 30,
             "head_size_m": 24,
             "margin_bottom": 10,
-            "text": "Radiance in Every Drop.",
+            "text": "Consectetur adipiscing elit.",
             "text_color": "#ffffff",
             "text_size_d": 16,
             "text_size_m": 14,
@@ -377,7 +377,7 @@
         "95cd312d-868a-41cb-ba80-25ac4c47391b": {
           "type": "caption",
           "settings": {
-            "caption": "OUR PRODUCT PHILOSOPHY",
+            "caption": "OUR PRODUCT",
             "text_style": "caption-with-letter-spacing",
             "text_size": "large"
           }
@@ -385,7 +385,7 @@
         "template--15124687650899__7c49854d-841e-4486-a518-217b88181104-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "We sustainably and ethically source our ingredients, to [create clean and sustainable products] that are good for your skin and good for the planet.",
+            "heading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "heading_size": "h1"
           }
         },
@@ -428,11 +428,11 @@
             "padding_size_in": 10,
             "text_border": 0,
             "bg_color": "rgba(0,0,0,0)",
-            "head": "Hydrate your skin with a suitable moisturizer.",
+            "head": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "head_color": "#ffffff",
             "head_size_d": 30,
             "head_size_m": 24,
-            "text": "Moisturize Daily",
+            "text": "Lorem Ipsum",
             "text_color": "#ffffff",
             "text_size_d": 16,
             "text_size_m": 14,
@@ -491,13 +491,13 @@
             "bg_color": "#dbdbc4",
             "icon_size": 30,
             "icon_corner": 0,
-            "head": "Benefits and Features",
+            "head": "Lorem ipsum dolor sit amet.",
             "use_body_font": false,
             "head_color": "#000000",
             "head_size_d": 30,
             "head_size_m": 24,
             "margin_bottom": 15,
-            "subtitle": "<p>Highlight the key benefits and features of your product</p>",
+            "subtitle": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
             "text_color": "#000000",
             "text_size_d": 16,
             "text_size_m": 16,
@@ -577,7 +577,7 @@
         "row_UgwAPk": {
           "type": "row",
           "settings": {
-            "title": "Treatment Time",
+            "title": "Lorem Ipsum",
             "cell_2_checkbox": "",
             "cell_2_text": "3 Minutes",
             "cell_3_checkbox": "",
@@ -595,7 +595,7 @@
         "row_Fpp7cj": {
           "type": "row",
           "settings": {
-            "title": "Prtable",
+            "title": "Lorem Ipsum",
             "cell_2_checkbox": "checked-circle",
             "cell_2_text": "",
             "cell_3_checkbox": "unchecked",
@@ -613,7 +613,7 @@
         "row_nEmCWi": {
           "type": "row",
           "settings": {
-            "title": "FDA - cleared",
+            "title": "Lorem Ipsum",
             "cell_2_checkbox": "checked-circle",
             "cell_2_text": "",
             "cell_3_checkbox": "unchecked",
@@ -631,7 +631,7 @@
         "row_ymccRR": {
           "type": "row",
           "settings": {
-            "title": "Customizable treatments",
+            "title": "Lorem Ipsum",
             "cell_2_checkbox": "checked-circle",
             "cell_2_text": "",
             "cell_3_checkbox": "unchecked",
@@ -677,13 +677,13 @@
         "color_scheme": "",
         "container": true,
         "container_max_width": "",
-        "heading": "What makes [<strong>Us</strong>] right for you?",
+        "heading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "heading_size": "h0",
-        "description": "<h3>(Here’s a comparison, but there is really no comparison)</h3>",
+        "description": "<h3>Lorem ipsum dolor sit amet.</h3>",
         "table_min_width": "700",
         "table_first_col_width": 30,
         "first_col_text_align": "center",
-        "table_caption": "Trusted and [recommended] by world leading ((Dermatologists))",
+        "table_caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "table_bg_color": "#ffffff",
         "table_text_color": "#121212",
         "table_border_opacity": 5,
@@ -702,7 +702,7 @@
         "template--15124687650899__5ba491c9-db08-4028-9406-07c41d9279e4-announcement-1": {
           "type": "announcement",
           "settings": {
-            "Announcement": "<p><strong>EARLY BLACK FRIDAY SALE</strong></p>",
+            "Announcement": "<p><strong>Lorem ipsum consectetur adipiscing elit.</strong></p>",
             "announcement_size": 18,
             "announcement_size_m": 16,
             "text_spacing": 2,
@@ -715,7 +715,7 @@
         "template--15124687650899__5ba491c9-db08-4028-9406-07c41d9279e4-announcement-2": {
           "type": "announcement",
           "settings": {
-            "Announcement": "<p><strong>40% OFF + FREE SHIPPING</strong></p>",
+            "Announcement": "<p><strong>Lorem ipsum dolor sit amet.</strong></p>",
             "announcement_size": 18,
             "announcement_size_m": 16,
             "text_spacing": 1.5,
@@ -741,7 +741,7 @@
         "padding_item_mobile": 8,
         "padding_top": 0,
         "padding_bottom": 0
-      }
+      } 
     },
     "58054187-7070-4732-93cb-2a5dede46e56": {
       "type": "video-with-text",
@@ -759,7 +759,7 @@
         "mobile_content_position": "middle",
         "color_scheme": "inverse",
         "desktop_content_alignment": "center",
-        "heading": "<strong>Because Your Skin Deserves the Best.</strong>",
+        "heading": "<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong>",
         "heading_size": "h0",
         "text": "",
         "button_label_1": "Shop Now",
@@ -776,11 +776,11 @@
         "layout": "grid",
         "show_border": false,
         "video_border": 8,
-        "first_text": "Shop our best deals for",
+        "first_text": "Lorem ipsum dolor sit amet.",
         "third_text": "Offers ends in",
         "small_text": 16,
         "small_text_mb": 16,
-        "second_text": "MID SEASONS DAY SALE",
+        "second_text": "Lorem ipsum dolor sit amet.",
         "big_text": 28,
         "big_text_mb": 16,
         "url": "#",
@@ -801,8 +801,8 @@
           "type": "text",
           "settings": {
             "subheading": "",
-            "heading": "Image comparison",
-            "content": "<p>See the stunning transformations our products deliver — real results from real customers.</p>",
+            "heading": "Lorem ipsum",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget augue vitae orci feugiat lacinia sed non neque.</p>",
             "text_position": "center",
             "color": "#000000"
           }
@@ -849,7 +849,7 @@
         "template--15124687650899__f6aa73dd-735c-463c-a915-039d2a5a8dd1-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget augue vitae orci feugiat lacinia sed non neque.</p>",
             "text_style": "body"
           }
         },
@@ -902,7 +902,7 @@
             "padding_size": 13,
             "padding_size_in": 10,
             "bg_color": "rgba(0,0,0,0)",
-            "head": "@reviveskincare",
+            "head": "@LoremIpsum",
             "head_color": "#ffffff",
             "head_size_d": 26,
             "head_size_m": 24,
@@ -1061,12 +1061,12 @@
             "padding_size_in": 10,
             "text_border": 0,
             "bg_color": "rgba(0,0,0,0)",
-            "head": "BUY NOW OR CRY LATER",
+            "head": "Lorem ipsum dolor sit amet.",
             "head_color": "#000000",
             "head_size_d": 30,
             "head_size_m": 24,
             "margin_bottom": 15,
-            "text": "These stocks won't last forever.",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "text_color": "#000000",
             "text_size_d": 16,
             "text_size_m": 14,
@@ -1092,12 +1092,12 @@
             "padding_size_in": 10,
             "text_border": 0,
             "bg_color": "rgba(0,0,0,0)",
-            "head": "BE FREE. BE BEAUTIFUL.",
+            "head": "Lorem ipsum sit amet varius justo eros sed ante.",
             "head_color": "#000000",
             "head_size_d": 30,
             "head_size_m": 24,
             "margin_bottom": 15,
-            "text": "Express your wild side with these shirts.",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "text_color": "#000000",
             "text_size_d": 16,
             "text_size_m": 14,
