@@ -197,7 +197,7 @@
       "badge_corner_radius": 0,
       "badge_border_color": "#e8e8e8",
       "brand_headline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "brand_description": "<p>Lorem Ipsum® dolor sit amet, consectetur adipiscing elit. Donec a suscipit est. Ut eu urna ultrices tortor tempus semper finibus vestibulum eros. Vestibulum ut finibus lorem. Aliquam maximus elementum nibh, eu posuere mauris pellentesque eu. Pellentesque et rhoncus neque, non fermentum ligula. </p>",
+      "brand_description": "<p>Lorem Ipsum® dolor sit amet, consectetur adipiscing elit. Donec a suscipit est. Ut eu urna ultrices tortor tempus semper finibus vestibulum eros.</p>",
       "brand_image_width": 130,
       "social_facebook_link": "",
       "social_instagram_link": "",
@@ -632,6 +632,6 @@
     },
     "platform_customizations": {
       "custom_css": []
-    }
+    } 
   }
   
