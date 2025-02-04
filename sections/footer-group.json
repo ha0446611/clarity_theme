@@ -64,7 +64,7 @@
         "lazy": true,
         "scrolling_velocity": 50,
         "scrolling_velocity_mobile": 54,
-        "background_color": "#5e6350",
+        "background_color": "#000000",
         "background_gradient": "",
         "border_color": "#000000",
         "margin_top": 0,

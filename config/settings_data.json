@@ -300,11 +300,11 @@
                 "button_mr": 50,
                 "button_mr_mobile": 40,
                 "button_style": "outline",
-                "button_color": "#5e6350",
+                "button_color": "#000000",
                 "button_hover_color": "#ffffff",
                 "button_bg_color": "#ffffff",
-                "button_bg_hover_color": "#5e6350",
-                "button_border_color": "#5e6350",
+                "button_bg_hover_color": "#000000",
+                "button_border_color": "#000000",
                 "button_border_hover_color": "#ffffff"
               }
             }
@@ -319,7 +319,7 @@
             "lazy": true,
             "scrolling_velocity": 50,
             "scrolling_velocity_mobile": 54,
-            "background_color": "#5e6350",
+            "background_color": "#000000",
             "background_gradient": "",
             "border_color": "#000000",
             "margin_top": 0,

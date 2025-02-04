@@ -792,7 +792,7 @@
             "block_order": ["template--20428573212984__e80cb7bb-7295-4d49-bbf9-cb8f0fdd2f92-collapsible_row-2", "template--20428573212984__e80cb7bb-7295-4d49-bbf9-cb8f0fdd2f92-collapsible_row-3", "4f82fe7e-cbd8-48ee-8eac-c4c0d675189e", "83ca6b89-d3b8-4d97-9e69-effe4cf282f5", "b063c876-e8c2-4de3-aff7-6afa1ce75e44"],
             "settings": {
                 "caption": "FAQs",
-                "heading": "Lumix Q&A",
+                "heading": "Lorem Ipsum Q&A",
                 "heading_size": "h0",
                 "heading_alignment": "center",
                 "layout": "section",
@@ -819,7 +819,7 @@
                     "type": "feature",
                     "settings": {
                         "icon_size": 50,
-                        "heading": "Erase",
+                        "heading": "Lorem Ipsum",
                         "heading_size_alt": 18,
                         "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>"
                     }
@@ -1406,7 +1406,7 @@
                         "opacity_color_full": false,
                         "padding_size": 15,
                         "padding_size_in": 10,
-                        "text_border": 0,
+                        "text_border": 0, 
                         "bg_color": "rgba(0,0,0,0)",
                         "head": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                         "head_color": "#ffffff",
