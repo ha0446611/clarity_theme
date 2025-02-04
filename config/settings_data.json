@@ -55,7 +55,7 @@
       "cart_bar_height": 3,
       "cart_bar_radius": 24,
       "cart_goal_icon_size": 26,
-      "collection": "", 
+      "collection": "",
       "limit": 6,
       "title_text_align": "left",
       "product_text_align": "center",
@@ -90,7 +90,7 @@
       "body_spacing": 0,
       "body_line_height": 1.5,
       "body_scale": 80,
-      "type_menu_font": "helvetica_n4", 
+      "type_menu_font": "helvetica_n4",
       "header_menu_size": 14,
       "header_spacing": 0.5,
       "header_menu_transform": "none",
@@ -432,6 +432,17 @@
             "text": "#ffffff",
             "button": "#ffffff",
             "button_label": "#000000",
+            "secondary_button_label": "#000000",
+            "shadow": "#000000"
+          }
+        },
+        "scheme-38ba62b4-8b31-4a87-822a-c732deb80aa9": {
+          "settings": {
+            "background": "#ebebeb",
+            "background_gradient": "linear-gradient(180deg, rgba(235, 235, 235, 1), rgba(196, 196, 196, 1) 75%)",
+            "text": "#484646",
+            "button": "#000000",
+            "button_label": "#ffffff",
             "secondary_button_label": "#000000",
             "shadow": "#000000"
           }
