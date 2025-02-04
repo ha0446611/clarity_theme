@@ -48,6 +48,12 @@
    .clarity-slide .slider-button {
        height:40px;
            }
+
+  {% if section.settings.set-max-width %}
+  #shopify-section-{{ section.id }} .slideshow__text.banner__box {
+    max-width: {{ section.settings.content-max-width }}rem;
+  }
+  {% endif %}
 </style>
 
 <slideshow-component
@@ -356,6 +362,26 @@
    },
   "settings": [
     {
+      "type": "header",
+      "content": "Content max width"
+    },
+    {
+      "type": "checkbox",
+      "id": "set-max-width",
+      "label": "Set max width",
+	  "default": false
+    },
+    {
+      "type": "range",
+      "id": "content-max-width",
+      "label": "Content max width",
+      "default": 54,
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "rem"
+    },
+    {
       "type": "select",
       "id": "layout",
       "options": [
@@ -548,26 +574,7 @@
             "label":     "Heading Line Height",
             "default":   1.4
         },
-        {
-          "type": "select",
-          "id": "heading_size",
-          "options": [
-            {
-              "value": "h2",
-              "label": "t:sections.all.heading_size.options__1.label"
-            },
-            {
-              "value": "h1",
-              "label": "t:sections.all.heading_size.options__2.label"
-            },
-            {
-              "value": "h0",
-              "label": "t:sections.all.heading_size.options__3.label"
-            }
-          ],
-          "default": "h1",
-          "label": "t:sections.all.heading_size.label"
-        },
+        
         {
           "type": "liquid",
           "id": "subheading",
@@ -756,3 +763,26 @@
   ]
 }
 {% endschema %}
+
+{% comment %}
+{
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "t:sections.all.heading_size.options__1.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.all.heading_size.options__2.label"
+            },
+            {
+              "value": "h0",
+              "label": "t:sections.all.heading_size.options__3.label"
+            }
+          ],
+          "default": "h1",
+          "label": "t:sections.all.heading_size.label"
+        },
+{% endcomment %}
