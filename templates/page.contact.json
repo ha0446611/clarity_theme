@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "main": {
       "type": "main-page",
@@ -52,6 +52,36 @@
         "show_text_below": false
       }
     },
+    "rich_text_e4M9X4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HNFcMm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get in touch",
+            "heading_size": "h1"
+          }
+        },
+        "text_KpYVjf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’d love to hear from you! If you have any questions, need support, or just want to say hello, feel free to get in touch with us through the details below.</p><p><strong>Email Us: </strong><a>support@example.com</a></p><p><strong>Call Us : </strong>+1 (800) 123-4567</p><p><strong>Visit Us : </strong>1234 Example Street<br/>Suite 5678 Example City, EX 12345</p><p><strong>Business Hours : </strong>Monday - Friday: 9:00 AM - 6:00 PM<br/>Saturday: 10:00 AM - 4:00 PM<br/>Sunday: Closed</p><p>Alternatively, you can fill out the contact form below, and we’ll get back to you as soon as possible.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HNFcMm",
+        "text_KpYVjf"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
     "contact_form_ikVfzk": {
       "type": "contact-form",
       "blocks": {
@@ -87,11 +117,11 @@
         "text_6XGwdQ"
       ],
       "settings": {
-        "heading": "Get in touch",
+        "heading": "",
         "heading_size": "h1",
         "heading_align": "left",
         "heading_align_mobile": "left",
-        "sub_heading": "<p>We’d love to hear from you! If you have any questions, need support, or just want to say hello, feel free to get in touch with us through the details below.</p><p><strong>Email Us</strong><br/><a>support@example.com</a></p><p><strong>Call Us</strong><br/>+1 (800) 123-4567</p><p><strong>Visit Us</strong><br/>1234 Example Street<br/>Suite 5678<br/>Example City, EX 12345</p><p><strong>Business Hours</strong><br/>Monday - Friday: 9:00 AM - 6:00 PM<br/>Saturday: 10:00 AM - 4:00 PM<br/>Sunday: Closed</p><p>Alternatively, you can fill out the contact form below, and we’ll get back to you as soon as possible.</p>",
+        "sub_heading": "",
         "sub_heading_align": "left",
         "sub_heading_align_mobile": "left",
         "color_scheme": "",
@@ -103,7 +133,7 @@
   "order": [
     "main",
     "image_banner_eJfeeD",
+    "rich_text_e4M9X4",
     "contact_form_ikVfzk"
   ]
 }
- 
